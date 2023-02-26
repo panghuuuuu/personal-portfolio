@@ -4,9 +4,6 @@ import HeaderSocials from "./HeaderSocials";
 
 import "../stylesheets/header.css";
 
-// assets
-import homepic from "../assets/homepic.png";
-
 const Header = () => {
   return (
     <div className="container header__container">
