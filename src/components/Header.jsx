@@ -17,10 +17,6 @@ const Header = () => {
       </div>
       <HeaderButtons />
       <HeaderSocials />
-      <div className="pic">
-        <img src={homepic} alt=""></img>
-      </div>
-
       <a href="#contact" className="scroll_down">
         {" "}
         Scroll Down
