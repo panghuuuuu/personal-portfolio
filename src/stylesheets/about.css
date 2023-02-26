@@ -76,4 +76,28 @@
   grid-column: 1 / -1;
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+  text-align: justify;
+}
+
+/* =============== MEDIA QUERIES ============== */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
