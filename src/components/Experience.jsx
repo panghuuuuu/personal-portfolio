@@ -1,6 +1,24 @@
 import React from "react";
 import "../stylesheets/experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
+import { DiJavascript } from "react-icons/di";
+import { SiBootstrap } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { DiReact } from "react-icons/di";
+import { RiVuejsLine } from "react-icons/ri";
+import { DiMongodb } from "react-icons/di";
+import { DiNodejsSmall } from "react-icons/di";
+import { DiPhp } from "react-icons/di";
+import { DiMysql } from "react-icons/di";
+import { DiPython } from "react-icons/di";
+import { SiDjango } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiFlutter } from "react-icons/si";
+import { DiSwift } from "react-icons/di";
+import { TbCurrencySolana } from "react-icons/tb";
+import { SiSolidity } from "react-icons/si";
+
 const Experience = () => {
   return (
     <section id="experience">
@@ -13,61 +31,54 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" /> HTML
+                  <DiHtml5 className="experience__details-icon" /> HTML
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" /> CSS
+                  <DiCss3 className="experience__details-icon" /> CSS
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
+                  <DiJavascript className="experience__details-icon" />{" "}
                   JavaScript
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
+                  <SiBootstrap className="experience__details-icon" />
                   Bootstrap
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
+                  <SiTypescript className="experience__details-icon" />
                   Typescript
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
+                  <DiReact className="experience__details-icon" />
                   React
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" /> Vue
+                  <RiVuejsLine className="experience__details-icon" /> Vue
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
@@ -78,63 +89,50 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" /> Node
-                  JS
+                  <DiNodejsSmall className="experience__details-icon" /> Node JS
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Mongo DB
+                  <DiMongodb className="experience__details-icon" /> Mongo DB
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" /> PHP
+                  <DiPhp className="experience__details-icon" /> PHP
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  MySQL
+                  <DiMysql className="experience__details-icon" /> MySQL
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Python
+                  <SiPostgresql className="experience__details-icon" /> Postgres
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Django
+                  <DiPython className="experience__details-icon" /> Python
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Laravel
+                  <SiDjango className="experience__details-icon" /> Django
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
@@ -145,19 +143,15 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Flutter
+                  <SiFlutter className="experience__details-icon" /> Flutter
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Swiftic
+                  <DiSwift className="experience__details-icon" /> Swiftic
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
@@ -168,19 +162,16 @@ const Experience = () => {
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
+                  <TbCurrencySolana className="experience__details-icon" />{" "}
                   Solana
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <div className="experience__text">
                 <h4>
-                  <BsPatchCheckFill className="experience__details-icon" />{" "}
-                  Solidity
+                  <SiSolidity className="experience__details-icon" /> Solidity
                 </h4>
-                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>

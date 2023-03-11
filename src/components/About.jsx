@@ -18,17 +18,17 @@ const About = () => {
         <div className="about__cards">
           <article className="about__card">
             <FiAward className="about__icon" />
-            <h5>Experience</h5>
-            <small>3+years Working Experience</small>
+            <h5>Education</h5>
+            <small>BS Computer Science</small>
           </article>
           <article className="about__card">
             <FiUsers className="about__icon" />
-            <h5>Clients</h5>
+            <h5>Postions</h5>
             <small>5+ Local</small>
           </article>
           <article className="about__card">
             <FiUsers className="about__icon" />
-            <h5>Projects</h5>
+            <h5>Certifications</h5>
             <small>10+ Completed</small>
           </article>
           <p class="about__bottom">
@@ -36,14 +36,10 @@ const About = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             volutpat lacus eu nisi fermentum sagittis. Vivamus vel bibendum
             urna. Ut maximus lorem sit amet justo consectetur, eu finibus nulla
-            eleifend. Aliquam quis velit sed nisl ultricies rutrum eget id enim.
-            Donec rhoncus elit quis nulla ultricies, vitae tincidunt lectus
-            faucibus. Cras ornare quam quis consectetur ullamcorper. Nunc in
-            nisi eget mi congue tincidunt. Sed et risus sit amet velit convallis
-            fermentum.{" "}
+            eleifend.{" "}
           </p>
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
+          <a href="#experience" className="btn btn-primary">
+            Experiences
           </a>
         </div>
       </div>
