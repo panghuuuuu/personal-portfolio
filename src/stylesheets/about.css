@@ -1,4 +1,9 @@
+#about {
+  height: 100vh;
+}
+/* 
 .about__container {
+  padding: 5rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
@@ -79,7 +84,7 @@
 }
 
 /* =============== MEDIA QUERIES ============== */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -99,4 +104,4 @@
   .about__cards {
     grid-template-columns: 1fr 1fr;
   }
-}
+} */

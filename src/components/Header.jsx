@@ -26,7 +26,7 @@ const Header = () => {
           About Me
         </a>
         <a href="" className="btn btn-secondary">
-          Download CD
+          Resume
         </a>
       </div>
     </div>

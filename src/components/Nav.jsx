@@ -1,43 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../stylesheets/nav.css";
-import { AiOutlineHome } from "react-icons/ai";
-import { AiOutlineUser } from "react-icons/ai";
-import { BiBook } from "react-icons/bi";
-import { AiOutlineMessage } from "react-icons/ai";
-import { useState } from "react";
+import Logo from "../assets/logo.png";
+
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [scrolled, setScrolled] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled((prevScroll) => !prevScroll);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutSection = document.getElementById("about");
+      const isAtAboutSection =
+        window.scrollY >= aboutSection.offsetTop &&
+        window.scrollY < aboutSection.offsetTop + aboutSection.offsetHeight;
+      setShowNav(!isAtAboutSection);
+    };
+
+    document.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav>
-      <a
-        href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
-      >
-        <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
-      >
-        <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
-      >
-        <BiBook />
-      </a>
-      <a
-        href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
-      >
-        <AiOutlineMessage />
-      </a>
-    </nav>
+    <>
+      {showNav && (
+        <nav className={scrolled ? "scrolled" : ""}>
+          <img src={Logo} alt="Logo" />
+          <div className="links">
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experiences</a>
+            <a href="#contact">Contact Me </a>
+          </div>
+        </nav>
+      )}
+    </>
   );
 };
 
