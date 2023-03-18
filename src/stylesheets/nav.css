@@ -1,33 +1,39 @@
 nav {
-  background: rgba(0, 0, 0, 0.3);
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
-  z-index: 2;
-  position: fixed;
-  bottom: 2rem;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
   display: flex;
-  gap: 0.8rem;
-  border-radius: 3rem;
-  backdrop-filter: blur(15px);
-  left: 50%;
-  transform: translateX(-50%);
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+}
+
+nav.scrolled {
+  background-color: black;
+}
+
+nav img {
+  width: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9rem;
 }
 
 nav a {
-  background: transparent;
-  padding: 0.9rem;
-  border-radius: 50%;
-  display: flex;
-  color: var(--color-light);
-  font-size: 1.1rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.links {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 5rem;
 }
 
 nav a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-nav a.active {
-  background-color: var(--color-bg);
-  color: var(--color-white);
+  border-bottom: 0.1rem solid aqua;
+  color: aqua;
 }
