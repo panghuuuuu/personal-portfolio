@@ -19,7 +19,7 @@ nav img {
   margin-left: 9rem;
 }
 
-nav a {
+.links a {
   padding: 0.5rem;
   font-size: 0.9rem;
   color: white;
@@ -33,7 +33,7 @@ nav a {
   margin-right: 5rem;
 }
 
-nav a:hover {
+.links a:hover {
   border-bottom: 0.1rem solid aqua;
   color: aqua;
 }
