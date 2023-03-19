@@ -4,8 +4,6 @@ import Logo from "../assets/logo.png";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [showNav, setShowNav] = useState(true);
-
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -20,36 +18,19 @@ const Nav = () => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection = document.getElementById("about");
-      const isAtAboutSection =
-        window.scrollY >= aboutSection.offsetTop &&
-        window.scrollY < aboutSection.offsetTop + aboutSection.offsetHeight;
-      setShowNav(!isAtAboutSection);
-    };
-
-    document.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <>
-      {showNav && (
-        <nav className={scrolled ? "scrolled" : ""}>
-          <img src={Logo} alt="Logo" />
-          <div className="links">
-            <a href="#">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#experience">Experiences</a>
-            <a href="#contact">Contact Me </a>
-          </div>
-        </nav>
-      )}
-    </>
+    <nav className={scrolled ? "scrolled" : ""}>
+      <a href="#header">
+        <img src={Logo} alt="Logo" />
+      </a>
+      <div className="links">
+        <a href="#experience">Experiences</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+    </nav>
   );
 };
 

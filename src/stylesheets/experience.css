@@ -1,65 +1,54 @@
-.experience__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.experience__container > div {
-  background: var(--color-bg-variant);
-  padding: 2.4rem 5rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-}
-
-.experience__container > div:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-  cursor: default;
-}
-
-.experience__container > div h3 {
+#experience {
+  height: 100vh;
   text-align: center;
-  color: var(--color-primary);
 }
 
-.experience__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+.experience__container {
+  text-align: left;
+  padding-top: 10rem;
 }
 
-.experience__details {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+#experience a {
+  margin: 2rem;
+  display: inline-block;
 }
 
-.experience__details-icon {
-  color: var(--color-primary);
+.scroll-downs {
+  margin: 0 auto;
+  width: max-content;
+  position: relative;
+  z-index: -1;
 }
 
-/* =============== MEDIA QUERIES ============== */
-@media screen and (max-width: 1024px) {
-  .experience__container {
-    grid-template-columns: 1fr;
+.mousey {
+  width: 0.02rem;
+  padding: 10px 15px;
+  height: 1.5rem;
+  border: 0.1rem solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 0.09rem;
+  height: 0.4rem;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
   }
-  .experience__container > div {
-    width: 80%;
-    padding: 2rem;
-    margin: 0 auto;
+  10% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  .experience__content {
-    padding: 1rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  .experience__container {
-    gap: 1rem;
-  }
-
-  .experience__container > div {
-    width: 100%;
-    padding: 2rem 1rem;
-    width: var(--containder-width-small);
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
   }
 }

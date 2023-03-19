@@ -1,0 +1,32 @@
+.experiencetabs__container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.tabs {
+  width: 20rem;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.25);
+  border-left: 3px solid blue;
+}
+
+.tabs:hover {
+  background-color: black;
+}
+
+.active-tabs {
+  border-left: 3px solid red;
+  background-color: var(--color-primary);
+  border-bottom: 1px solid transparent;
+}
+
+.content {
+  padding: 20px;
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
