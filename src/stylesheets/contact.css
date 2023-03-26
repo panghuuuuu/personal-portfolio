@@ -13,6 +13,9 @@
   text-align: center;
 }
 
+.label {
+  padding-top: 1rem;
+}
 .name {
   display: grid;
   grid-template-columns: 1fr 1fr;
