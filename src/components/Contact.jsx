@@ -3,6 +3,7 @@ import "../stylesheets/contact.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsDribbble } from "react-icons/bs";
+import { HiMail } from "react-icons/hi";
 import Picture from "../assets/homepic.png";
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -103,6 +104,13 @@ const Contact = () => {
             </a>
             <a href="https://dribble.com" target="_blank" rel="noreferrer">
               <BsDribbble />
+            </a>
+            <a
+              href="mailto:ysabellapanghulan@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <HiMail />
             </a>
           </div>
         </div>
