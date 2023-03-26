@@ -4,6 +4,12 @@ import Logo from "../assets/logo.png";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -21,9 +27,9 @@ const Nav = () => {
 
   return (
     <nav className={scrolled ? "scrolled" : ""}>
-      <a href="#header">
+      <button onClick={scrollToTop}>
         <img src={Logo} alt="Logo" />
-      </a>
+      </button>
       <div className="links">
         <a href="#experience">Experiences</a>
         <a href="#skills">Skills</a>

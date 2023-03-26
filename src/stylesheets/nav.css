@@ -19,6 +19,13 @@ nav img {
   margin-left: 9rem;
 }
 
+nav img:hover {
+  cursor: pointer;
+}
+
+nav button {
+  background-color: transparent;
+}
 .links a {
   padding: 0.5rem;
   font-size: 0.9rem;
