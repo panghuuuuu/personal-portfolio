@@ -5,7 +5,6 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 
 import Works from "./components/Works";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -17,7 +16,6 @@ const App = () => {
       <Experience />
       <Skills />
       <Works />
-      <Testimonials />
       <Contact />
       <Footer />
     </div>
