@@ -1,0 +1,16 @@
+#works {
+  height: 100vh;
+  height: 100svh;
+}
+.projects {
+  padding-top: 10rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+}
+
+.sub__projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
