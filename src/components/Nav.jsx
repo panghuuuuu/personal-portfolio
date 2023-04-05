@@ -24,7 +24,13 @@ const Nav = () => {
 
   useEffect(() => {
     const handleActiveSection = () => {
-      const sections = ["#experience", "#skills", "#works", "#contact"];
+      const sections = [
+        "#header",
+        "#experience",
+        "#skills",
+        "#works",
+        "#contact",
+      ];
       sections.forEach((sectionId) => {
         const sectionElement = document.querySelector(sectionId);
         const sectionBound = sectionElement.getBoundingClientRect();
@@ -55,7 +61,7 @@ const Nav = () => {
         <img
           src={Logo}
           alt="Logo"
-          className={currentSection === "#home" ? "active-sec" : ""}
+          className={currentSection === "#header" ? "active-sec" : ""}
         />
       </button>
       <div className="links">
