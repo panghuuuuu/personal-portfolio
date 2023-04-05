@@ -28,6 +28,7 @@ input {
   height: 3rem;
   margin-right: 1rem;
   background-color: transparent;
+  color: var(--color-light);
 }
 
 .email {
@@ -41,6 +42,7 @@ textarea {
   resize: none;
   background-color: transparent;
   border-bottom: 0.2rem solid black;
+  color: var(--color-light);
 }
 
 .submit_btn {
@@ -58,4 +60,9 @@ textarea {
 .contact__links {
   display: flex;
   justify-content: space-evenly;
+}
+
+#contact h4 {
+  text-align: center;
+  color: var(--color-light);
 }
