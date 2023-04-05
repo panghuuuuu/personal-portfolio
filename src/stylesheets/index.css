@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
 }
 
 ::-webkit-scrollbar {
@@ -43,10 +44,6 @@ h5 {
 
 h1 {
   font-size: 2.5rem;
-}
-
-section {
-  margin-top: 8rem;
 }
 
 section > h2,
