@@ -7,19 +7,22 @@ const Header = () => {
     <section id="header">
       <div className="container header__container">
         <div className="header__text">
-          <h5>Hello I'm</h5>
-          <h1>Ysabella Panghulan</h1>
-          <h5 className="text-light">Fullstack Developer</h5>
+          <h4 class="intro">Hello, I am</h4>
+          <h1>
+            Ysabella Panghulan<span>.</span>
+          </h1>
+          <h2>I am a Software Engineer.</h2>
         </div>
         <h4 className="header__bottom">
           {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat
-          lacus eu nisi fermentum sagittis. Vivamus vel bibendum urna. Ut
-          maximus lorem sit amet justo consectetur, eu finibus nulla eleifend.
-          Aliquam quis velit sed nisl ultricies rutrum eget id enim. Donec
-          rhoncus elit quis nulla ultricies, vitae tincidunt lectus faucibus.
-          Cras ornare quam quis consectetur ullamcorper. Nunc in nisi eget mi
-          congue tincidunt. Sed et risus sit amet velit convallis fermentum.{" "}
+          I am a <span>Full-Stack Developer</span> with extensive experience in
+          developing both <span>web and mobile applications</span>. I have
+          expertise in a range of front-end and back-end technologies. My
+          knowledge in <span>data science </span>
+          allows me to integrate machine learning algorithms and analytics tools
+          into my applications to provide valuable insights for users. I enjoy
+          building robust and scalable systems that meet the most demanding
+          requirements.{" "}
         </h4>
         <HeaderSocials />
         <div className="header__buttons">

@@ -3,8 +3,7 @@ import "../stylesheets/experiencetabs.css";
 import { Position } from "../constants/experience.js";
 
 const ExperienceTabs = () => {
-  const [toggleState, setToggleState] = useState(1);
-
+  const [toggleState, setToggleState] = useState(0);
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -23,15 +22,21 @@ const ExperienceTabs = () => {
     value.forEach((data) => {
       let position = data.position;
       let year = data.year;
-      let desc = data.description;
-
+      let arrDesc = data.description;
       content.push(
         <div
           className={toggleState === i ? "content  active-content" : "content"}
         >
           <h2>{position}</h2>
-          <h3>{year}</h3>
-          <p>{desc}</p>
+          <h4>{year}</h4>
+          <div className="desc-list">
+            <ul>
+              {arrDesc.map((desc, i) => (
+                <li key={i}>{desc}</li>
+              ))}
+            </ul>
+          </div>
+          <br />
         </div>
       );
     });
