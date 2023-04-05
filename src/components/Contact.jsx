@@ -34,12 +34,12 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="form">
           <h1> Contact Me </h1>
-          <p>
+          <h4>
             {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            commodo metus vel volutpat faucibus. Fusce vestibulum dolor nec
-            bibendum vehicula. Nullam id metus vel sapien tincidunt aliquet.{" "}
-          </p>
+            Hey there! Don't hesitate to hit me up if you have any opportunities
+            in mind. And if you just want to chat randomly, feel free to do so
+            too!{" "}
+          </h4>
           <div className="name">
             <div className="label">
               <p>First Name</p>
