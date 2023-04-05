@@ -18,159 +18,95 @@ import { SiFlutter } from "react-icons/si";
 import { DiSwift } from "react-icons/di";
 import { TbCurrencySolana } from "react-icons/tb";
 import { SiSolidity } from "react-icons/si";
+import Icon from "../assets/skills.png";
 
 const Skills = () => {
   return (
     <section id="skills">
       <div className="container skills__container">
-        <div className="skills__frontend">
-          <h3>Frontend Development</h3>
-          <div className="skills__content">
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiHtml5 className="skills__details-icon" /> HTML
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiCss3 className="skills__details-icon" /> CSS
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiJavascript className="skills__details-icon" /> JavaScript
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <SiBootstrap className="skills__details-icon" />
-                  Bootstrap
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <SiTypescript className="skills__details-icon" />
-                  Typescript
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiReact className="skills__details-icon" />
-                  React
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <RiVuejsLine className="skills__details-icon" /> Vue
-                </h4>
-              </div>
-            </article>
-          </div>
+        <div className="hero-container">
+          <p>
+            I possess a wide range of knowledge on various tech stacks and
+            programming languages, particularly in{" "}
+            <span>full-stack development</span> for both web and mobile
+            platforms. Additionally, I have experience and expertise in{" "}
+            <span>Web3 Development</span>.
+          </p>
+          <img src={Icon} alt="skills icon" />
         </div>
-        <div className="skills__backend">
-          <h3>Backend Development</h3>
-          <div className="skills__content">
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiNodejsSmall className="skills__details-icon" /> Node JS
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiMongodb className="skills__details-icon" /> Mongo DB
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiPhp className="skills__details-icon" /> PHP
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiMysql className="skills__details-icon" /> MySQL
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <SiPostgresql className="skills__details-icon" /> Postgres
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiPython className="skills__details-icon" /> Python
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <SiDjango className="skills__details-icon" /> Django
-                </h4>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div className="skills__mobile">
-          <h3>Mobile Development</h3>
-          <div className="skills__content">
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <SiFlutter className="skills__details-icon" /> Flutter
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <DiSwift className="skills__details-icon" /> Swiftic
-                </h4>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div className="skills__web3">
-          <h3>Web3 Development</h3>
-          <div className="skills__content">
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <TbCurrencySolana className="skills__details-icon" /> Solana
-                </h4>
-              </div>
-            </article>
-            <article className="skills__details">
-              <div className="skills__text">
-                <h4>
-                  <SiSolidity className="skills__details-icon" /> Solidity
-                </h4>
-              </div>
-            </article>
-          </div>
+        <div className="skills-content">
+          <h4>
+            <DiHtml5 className="skills__details-icon" />
+            <br></br> HTML
+          </h4>
+          <h4>
+            <DiCss3 className="skills__details-icon" />
+            <br></br> CSS
+          </h4>
+          <h4>
+            <DiJavascript className="skills__details-icon" />
+            <br></br> JavaScript
+          </h4>
+          <h4>
+            <SiBootstrap className="skills__details-icon" />
+            <br></br> Bootstrap
+          </h4>
+          <h4>
+            <SiTypescript className="skills__details-icon" />
+            <br></br> Typescript
+          </h4>
+          <h4>
+            <DiReact className="skills__details-icon" />
+            <br></br> React
+          </h4>
+          <h4>
+            <RiVuejsLine className="skills__details-icon" />
+            <br></br> Vue
+          </h4>
+          <h4>
+            <DiNodejsSmall className="skills__details-icon" />
+            <br></br> Node JS
+          </h4>
+          <h4>
+            <DiMongodb className="skills__details-icon" />
+            <br></br> Mongo DB
+          </h4>
+          <h4>
+            <DiPhp className="skills__details-icon" />
+            <br></br> PHP
+          </h4>
+          <h4>
+            <DiMysql className="skills__details-icon" />
+            <br></br> MySQL
+          </h4>
+          <h4>
+            <SiPostgresql className="skills__details-icon" />
+            <br></br> Postgres
+          </h4>
+          <h4>
+            <DiPython className="skills__details-icon" />
+            <br></br> Python
+          </h4>
+          <h4>
+            <SiDjango className="skills__details-icon" />
+            <br></br> Django
+          </h4>
+          <h4>
+            <SiFlutter className="skills__details-icon" />
+            <br></br> Flutter
+          </h4>
+          <h4>
+            <DiSwift className="skills__details-icon" />
+            <br></br> Swiftic
+          </h4>
+          <h4>
+            <TbCurrencySolana className="skills__details-icon" />
+            <br></br> Solana
+          </h4>
+          <h4>
+            <SiSolidity className="skills__details-icon" />
+            <br></br> Solidity
+          </h4>
         </div>
       </div>
     </section>
