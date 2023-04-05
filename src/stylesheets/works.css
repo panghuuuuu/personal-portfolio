@@ -3,6 +3,29 @@
   height: 100svh;
 }
 
+#works h2,
+h3 {
+  text-align: center;
+}
+
+.sub__projects img {
+  height: 60%;
+}
+
+span.tech {
+  background-color: var(--color-bg-variant);
+  color: var(--color-primary-variant);
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+}
+
+.tech_items {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,4 +35,18 @@
 .sub__projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.site_links {
+  display: flex;
+  justify-content: center;
+}
+
+.site_links a {
+  color: var(--color-light);
+  margin: 0.2rem;
+}
+
+.site_links a:hover {
+  color: var(--color-primary);
 }
