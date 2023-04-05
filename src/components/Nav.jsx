@@ -3,38 +3,86 @@ import "../stylesheets/nav.css";
 import Logo from "../assets/logo.png";
 
 const Nav = () => {
+  const [currentSection, setCurrentSection] = useState("#home");
   const [scrolled, setScrolled] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    setCurrentSection("#home");
   };
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled((prevScroll) => !prevScroll);
-      }
+    const handleActiveSection = () => {
+      const sections = ["#experience", "#skills", "#works", "#contact"];
+      sections.forEach((sectionId) => {
+        const sectionElement = document.querySelector(sectionId);
+        const sectionBound = sectionElement.getBoundingClientRect();
+
+        if (
+          sectionBound.top <= 210 &&
+          sectionBound.bottom >= 210 &&
+          currentSection !== sectionId
+        ) {
+          setCurrentSection(sectionId);
+        }
+      });
     };
 
-    document.addEventListener("scroll", handleScroll, { passive: true });
+    handleActiveSection();
+    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("scroll", handleActiveSection);
 
     return () => {
       document.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("scroll", handleActiveSection);
     };
-  }, [scrolled]);
+  }, [currentSection]);
 
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <button onClick={scrollToTop}>
-        <img src={Logo} alt="Logo" />
+        <img
+          src={Logo}
+          alt="Logo"
+          className={currentSection === "#home" ? "active-sec" : ""}
+        />
       </button>
       <div className="links">
-        <a href="#experience">Experiences</a>
-        <a href="#skills">Skills</a>
-        <a href="#works">Works</a>
-        <a href="#contact">Contact Me</a>
+        <a
+          href="#experience"
+          className={currentSection === "#experience" ? "active-sec" : ""}
+        >
+          Experiences
+        </a>
+        <a
+          href="#skills"
+          className={currentSection === "#skills" ? "active-sec" : ""}
+        >
+          Skills
+        </a>
+        <a
+          href="#works"
+          className={currentSection === "#works" ? "active-sec" : ""}
+        >
+          Works
+        </a>
+        <a
+          href="#contact"
+          className={currentSection === "#contact" ? "active-sec" : ""}
+        >
+          Contact Me
+        </a>
       </div>
     </nav>
   );

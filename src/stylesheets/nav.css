@@ -43,6 +43,10 @@ nav button {
 }
 
 .links a:hover {
-  border-bottom: 0.1rem solid aqua;
-  color: aqua;
+  border-bottom: 0.1rem solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.active-sec {
+  color: var(--color-primary) !important;
 }
