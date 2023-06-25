@@ -39,4 +39,16 @@ export const Position = {
       ],
     },
   ],
+  OrSem: [
+    {
+      position: "Web Deputy",
+      year: "2022",
+      description: ["lorem"],
+    },
+    {
+      position: "Web Head",
+      year: "2023",
+      description: ["lorem"],
+    },
+  ],
 };
