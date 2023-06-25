@@ -50,7 +50,21 @@
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 1080px) {
+  #header {
+    height: fit-content;
+  }
+  .header__socials {
+    display: flex;
+    flex-direction: row;
+    right: 2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  #header {
+    height: fit-content;
+  }
   .header__socials {
     display: none;
   }
