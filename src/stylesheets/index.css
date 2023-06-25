@@ -105,21 +105,34 @@ img {
 
 /* =============== MEDIA QUERIES ============== */
 @media screen and (max-width: 1024px) {
-  .container {
-    width: var(--containder-width-mid);
+  h1 {
+    font-size: large;
+    word-wrap: break-word;
   }
-
-  section {
-    margin-top: 6rem;
+  h2 {
+    font-size: medium;
+    word-wrap: break-word;
+  }
+  h3,
+  h4 {
+    font-size: small;
+    word-wrap: break-word;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    width: var(--containder-width-small);
+  h1 {
+    font-size: large;
   }
-
-  section > h2 {
-    margin-top: 2rem;
+  h2 {
+    font-size: medium;
+  }
+  h3,
+  h4 {
+    font-size: small;
+  }
+  .container {
+    width: var(--container-width-small);
+    padding: 2rem;
   }
 }

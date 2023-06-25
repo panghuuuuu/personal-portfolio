@@ -39,6 +39,11 @@
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
+
+.scroll {
+  display: flex;
+  justify-content: center;
+}
 @keyframes scroll {
   0% {
     opacity: 0;
@@ -50,5 +55,11 @@
   100% {
     transform: translateY(15px);
     opacity: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scroll,
+  .scroll-downs {
+    display: none;
   }
 }

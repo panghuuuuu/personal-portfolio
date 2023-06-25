@@ -30,7 +30,9 @@ const Skills = () => {
             platforms. Additionally, I have experience and expertise in{" "}
             <span>Web3 Development</span>.
           </p>
-          <img src={Icon} alt="skills icon" />
+          <div className="skills_icon">
+            <img src={Icon} alt="skills icon" />
+          </div>{" "}
         </div>
         <div className="skills-content">
           <h4>

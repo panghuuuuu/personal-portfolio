@@ -1,10 +1,11 @@
 .experiencetabs__container {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
+  max-width: 100%;
 }
 
 .tabs {
-  width: 20rem;
+  width: 100%;
   padding: 1rem 1.2rem;
   cursor: pointer;
   color: white;
@@ -19,6 +20,12 @@
 }
 
 .active-tabs {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  color: var(--color-light);
   border-left: 2px solid var(--color-primary);
   background-color: transparent;
   color: var(--color-primary);
@@ -40,6 +47,7 @@
   color: var(--color-light);
   position: relative;
   padding-left: 1.5em;
+  word-wrap: break-word;
 }
 
 .desc-list li::before {
@@ -53,4 +61,54 @@
   border-right: 0.5em solid var(--color-primary);
   border-bottom: 0.4em solid transparent;
   transform: rotate(-180deg);
+}
+
+.showmore {
+  display: none;
+}
+
+.hidetabs {
+  display: none;
+}
+
+.hidetab {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  #experience {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .experiencetabs__container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .bloc-tabs {
+    grid-row: 1;
+    width: 95%;
+  }
+
+  .hidetabs {
+    display: none;
+  }
+
+  .hidetab {
+    display: none;
+  }
+
+  .content-tabs {
+    margin-top: 2rem;
+    grid-row: 2;
+  }
+
+  .showmore {
+    display: flex;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+  }
 }

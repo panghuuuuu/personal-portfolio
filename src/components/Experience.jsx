@@ -5,13 +5,15 @@ import ExperienceTabs from "./ExperienceTabs";
 const Experience = () => {
   return (
     <section id="experience">
-      <div className="experience__container">
+      <div className="container experience__container">
         <ExperienceTabs />
-      </div>
-      <a href="#skills">Scroll For More</a>
-      <div className="scroll-downs">
-        <div className="mousey">
-          <div className="scroller"></div>
+        <div className="scroll">
+          <a href="#skills">Scroll For More</a>
+        </div>
+        <div className="scroll-downs">
+          <div className="mousey">
+            <div className="scroller"></div>
+          </div>
         </div>
       </div>
     </section>
