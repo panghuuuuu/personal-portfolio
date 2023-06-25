@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import "../stylesheets/contact.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { BsDribbble } from "react-icons/bs";
+import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 import Picture from "../assets/homepic.png";
 const Contact = () => {
@@ -102,8 +102,8 @@ const Contact = () => {
             <a href="https://github.com" target="_blank" rel="noreferrer">
               <BsGithub />
             </a>
-            <a href="https://dribble.com" target="_blank" rel="noreferrer">
-              <BsDribbble />
+            <a href="https://gitlab.com" target="_blank" rel="noreferrer">
+              <AiFillGitlab />
             </a>
             <a
               href="mailto:ysabellapanghulan@gmail.com"

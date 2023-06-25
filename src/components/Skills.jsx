@@ -3,7 +3,7 @@ import "../stylesheets/skills.css";
 import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiJavascript } from "react-icons/di";
-import { SiBootstrap } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { DiReact } from "react-icons/di";
 import { RiVuejsLine } from "react-icons/ri";
@@ -13,11 +13,9 @@ import { DiPhp } from "react-icons/di";
 import { DiMysql } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { SiDjango } from "react-icons/si";
-import { SiPostgresql } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
-import { DiSwift } from "react-icons/di";
 import { TbCurrencySolana } from "react-icons/tb";
-import { SiSolidity } from "react-icons/si";
+import { SiTableau } from "react-icons/si";
 import Icon from "../assets/skills.png";
 
 const Skills = () => {
@@ -48,8 +46,8 @@ const Skills = () => {
             <br></br> JavaScript
           </h4>
           <h4>
-            <SiBootstrap className="skills__details-icon" />
-            <br></br> Bootstrap
+            <SiTailwindcss className="skills__details-icon" />
+            <br></br> Tailwind
           </h4>
           <h4>
             <SiTypescript className="skills__details-icon" />
@@ -80,10 +78,6 @@ const Skills = () => {
             <br></br> MySQL
           </h4>
           <h4>
-            <SiPostgresql className="skills__details-icon" />
-            <br></br> Postgres
-          </h4>
-          <h4>
             <DiPython className="skills__details-icon" />
             <br></br> Python
           </h4>
@@ -96,16 +90,12 @@ const Skills = () => {
             <br></br> Flutter
           </h4>
           <h4>
-            <DiSwift className="skills__details-icon" />
-            <br></br> Swiftic
-          </h4>
-          <h4>
             <TbCurrencySolana className="skills__details-icon" />
             <br></br> Solana
           </h4>
           <h4>
-            <SiSolidity className="skills__details-icon" />
-            <br></br> Solidity
+            <SiTableau className="skills__details-icon" />
+            <br></br> Tableau
           </h4>
         </div>
       </div>

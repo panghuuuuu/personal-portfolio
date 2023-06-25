@@ -3,7 +3,7 @@ import React from "react";
 // icons
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { BsDribbble } from "react-icons/bs";
+import { AiFillGitlab } from "react-icons/ai";
 
 const HeaderSocials = () => {
   return (
@@ -14,8 +14,8 @@ const HeaderSocials = () => {
       <a href="https://github.com" target="_blank">
         <BsGithub />
       </a>
-      <a href="https://dribble.com" target="_blank">
-        <BsDribbble />
+      <a href="https://gitlab.com" target="_blank">
+        <AiFillGitlab />
       </a>
     </div>
   );
