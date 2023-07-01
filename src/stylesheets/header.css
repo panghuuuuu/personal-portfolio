@@ -65,6 +65,11 @@
   #header {
     height: fit-content;
   }
+
+  .header__content {
+    padding: 1.5rem;
+  }
+
   .header__socials {
     display: none;
   }

@@ -82,7 +82,7 @@ const Works = () => {
             <>
               <img src={Projects[selectedProj].image} alt={selectedProj} />
               <h2>{selectedProj}</h2>
-              <p>{Projects[selectedProj].description}</p>
+              <h5>{Projects[selectedProj].description}</h5>
               <div className="site_links">
                 <a href={Projects[selectedProj].github_link}>
                   <BsGithub />

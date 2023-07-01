@@ -1,6 +1,4 @@
 #works {
-  height: 100vh;
-  height: 100svh;
   margin-top: 8rem;
 }
 
@@ -50,4 +48,12 @@ span.tech {
 
 .site_links a:hover {
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 1080px) {
+  .projects,
+  .sub__projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
