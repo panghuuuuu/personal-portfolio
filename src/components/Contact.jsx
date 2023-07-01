@@ -32,84 +32,85 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container contact__container">
-        <div className="form">
-          <h1> Contact Me </h1>
-          <h4>
-            {" "}
-            Hey there! Don't hesitate to hit me up if you have any opportunities
-            in mind. And if you just want to chat randomly, feel free to do so
-            too!{" "}
-          </h4>
-          <div className="name">
-            <div className="label">
-              <p>First Name</p>
+        <div className="textarea">
+          <div className="intro">
+            <h1> Contact Me </h1>
+            <h4>
+              {" "}
+              Hey there! Don't hesitate to hit me up if you have any
+              opportunities in mind. And if you just want to chat randomly, feel
+              free to do so too!{" "}
+            </h4>
+          </div>
+          <div className="form">
+            <div className="name">
+              <div className="label">
+                <p>First Name</p>
+              </div>
+              <input
+                type="text"
+                name="firstName"
+                value={firstName}
+                placeholder="John"
+                onChange={handleInputChange}
+                required
+              />
+              <div className="label">
+                <p>Last Name</p>
+              </div>
+              <input
+                type="text"
+                className="name"
+                name="lastName"
+                value={lastName}
+                placeholder="Doe"
+                onChange={handleInputChange}
+                required
+              />
             </div>
             <div className="label">
-              <p>Last Name</p>
+              <p>Email</p>
             </div>
-
             <input
-              type="text"
-              name="firstName"
-              value={firstName}
-              placeholder="John"
+              type="email"
+              className="email"
+              name="email"
+              value={email}
+              placeholder="johndoe@gmail.com"
               onChange={handleInputChange}
               required
             />
-            <input
-              type="text"
-              className="name"
-              name="lastName"
-              value={lastName}
-              placeholder="Doe"
+            <div className="label">
+              <p>Message</p>
+            </div>
+            <textarea
+              className="message"
+              name="message"
+              value={message}
+              placeholder="Send me a message"
               onChange={handleInputChange}
               required
             />
-          </div>
-          <div className="label">
-            <p>Email</p>
-          </div>
-          <input
-            type="email"
-            className="email"
-            name="email"
-            value={email}
-            placeholder="johndoe@gmail.com"
-            onChange={handleInputChange}
-            required
-          />
-          <div className="label">
-            <p>Message</p>
-          </div>
-          <textarea
-            className="message"
-            name="message"
-            value={message}
-            placeholder="Send me a message"
-            onChange={handleInputChange}
-            required
-          />
-          <div className="submit_btn">
-            <div className="btn btn-primary">Submit</div>
+            <div className="submit_btn">
+              <div className="btn btn-primary">Submit</div>
+            </div>
           </div>
         </div>
         <div className="contact__socials">
-          <img src={Picture} alt="Ysabell Panghulan"></img>
+          <div className="contact_img">
+            <img src={Picture} alt="Ysabell Panghulan"></img>
+          </div>
           <div className="contact__links">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com" target="_blank">
               <BsLinkedin />
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com" target="_blank">
               <BsGithub />
             </a>
-            <a href="https://gitlab.com" target="_blank" rel="noreferrer">
+            <a href="https://gitlab.com" target="_blank">
               <AiFillGitlab />
             </a>
-            <a
-              href="mailto:ysabellapanghulan@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="mailto:ysabellapanghulan@gmail.com" target="_blank">
               <HiMail />
             </a>
           </div>
