@@ -57,13 +57,15 @@ const Nav = () => {
 
   return (
     <nav className={scrolled ? "scrolled" : ""}>
-      <button onClick={scrollToTop}>
-        <img
-          src={Logo}
-          alt="Logo"
-          className={currentSection === "#header" ? "active-sec" : ""}
-        />
-      </button>
+      <div className="main_logo">
+        <button onClick={scrollToTop}>
+          <img
+            src={Logo}
+            alt="Logo"
+            className={currentSection === "#header" ? "active-sec" : ""}
+          />
+        </button>
+      </div>
       <div className="links">
         <a
           href="#experience"
