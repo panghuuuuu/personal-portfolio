@@ -1,6 +1,7 @@
 .experiencetabs__container {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
+  grid-gap: 1rem;
   max-width: 100%;
 }
 
@@ -64,10 +65,6 @@
 }
 
 .showmore {
-  display: none;
-}
-
-.hidetabs {
   display: none;
 }
 
