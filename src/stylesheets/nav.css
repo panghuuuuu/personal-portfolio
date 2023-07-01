@@ -3,6 +3,8 @@ nav {
   background-color: transparent;
   transition: background-color 0.5s ease;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   padding: 1rem;
@@ -12,34 +14,35 @@ nav.scrolled {
   background-color: var(--color-bg);
   border-bottom: 2px solid black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 nav img {
   width: 3rem;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 9rem;
 }
 
 nav img:hover {
   cursor: pointer;
 }
 
+.main_logo {
+  margin-left: 11%;
+}
 nav button {
   background-color: transparent;
 }
+
+.links {
+  display: flex;
+  margin-right: 5rem;
+}
+
 .links a {
   padding: 0.5rem;
   font-size: 0.9rem;
   color: white;
-}
-
-.links {
-  display: inline-block;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: 5rem;
 }
 
 .links a:hover {
@@ -49,4 +52,27 @@ nav button {
 
 .active-sec {
   color: var(--color-primary) !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .links a:hover {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    font-size: smaller;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+  .main_logo img {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
 }
