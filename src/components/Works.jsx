@@ -16,13 +16,17 @@ const Works = () => {
   let mainLiveSite = "";
   Object.entries(Projects).forEach(([key, value], i) => {
     let techContent = [];
-    value.technologies.forEach((item) => {
-      techContent.push(<span className="tech">{item} </span>);
+    value.technologies.forEach((item, index) => {
+      techContent.push(
+        <span key={`${key}-${index}`} className="tech">
+          {item}{" "}
+        </span>
+      );
     });
 
     if (i !== 0) {
       works.push(
-        <div className="indiv__project">
+        <div key={key} className="indiv__project">
           <img
             src={value.image}
             alt={key}

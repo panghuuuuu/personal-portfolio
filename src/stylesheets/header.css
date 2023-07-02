@@ -1,6 +1,4 @@
 #header {
-  height: 100vh;
-  height: 100svh;
   margin-top: 8rem;
 }
 
@@ -51,9 +49,6 @@
 }
 
 @media screen and (max-width: 1080px) {
-  #header {
-    height: fit-content;
-  }
   .header__socials {
     display: flex;
     flex-direction: row;
@@ -62,15 +57,16 @@
 }
 
 @media screen and (max-width: 600px) {
-  #header {
-    height: fit-content;
-  }
-
   .header__content {
     padding: 1.5rem;
   }
 
   .header__socials {
     display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #header {
+    height: 100vh;
   }
 }

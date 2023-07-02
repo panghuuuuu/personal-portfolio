@@ -75,14 +75,14 @@ textarea {
 }
 
 @media screen and (max-width: 750px) {
+  #contact {
+    height: auto;
+  }
   .contact__container {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  #contact {
-    height: fit-content;
-  }
   .name {
     display: grid;
     grid-template-columns: 1fr;
@@ -92,5 +92,11 @@ textarea {
   }
   .contact__links {
     margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #contact {
+    height: 100vh;
   }
 }
