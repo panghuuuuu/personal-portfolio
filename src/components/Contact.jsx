@@ -4,6 +4,8 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 import Picture from "../assets/skills.png";
+import axios from "axios";
+
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -27,6 +29,23 @@ const Contact = () => {
       default:
         break;
     }
+  };
+  const handleSubmit = () => {
+    const formData = {
+      firstName,
+      lastName,
+      email,
+      message,
+    };
+
+    axios
+      .post("/api/contact", formData)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
   return (
     <section id="contact">
@@ -91,7 +110,11 @@ const Contact = () => {
               required
             />
             <div className="submit_btn">
-              <div className="btn btn-primary">Submit</div>
+              <form onSubmit={handleSubmit}>
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
