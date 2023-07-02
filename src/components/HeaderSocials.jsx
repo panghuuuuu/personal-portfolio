@@ -1,21 +1,26 @@
 import React from "react";
 
 // icons
-import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
+import { HiMail } from "react-icons/hi";
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a href="https://linkedin.com" target="_blank">
-        <BsLinkedin />
-      </a>
-      <a href="https://github.com" target="_blank">
+      <a href="https://gitlab.com/panghuuuuu" rel="noreferrer" target="_blank">
         <BsGithub />
       </a>
-      <a href="https://gitlab.com" target="_blank">
+      <a href="https://gitlab.com/panghuuuuu" rel="noreferrer" target="_blank">
+        {" "}
         <AiFillGitlab />
+      </a>
+      <a
+        href="mailto:ysabellapanghulan@gmail.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <HiMail />
       </a>
     </div>
   );

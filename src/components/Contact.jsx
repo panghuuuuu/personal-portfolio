@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import "../stylesheets/contact.css";
-import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
@@ -101,16 +100,25 @@ const Contact = () => {
             <img src={Picture} alt="Ysabell Panghulan"></img>
           </div>
           <div className="contact__links">
-            <a href="https://linkedin.com" target="_blank">
-              <BsLinkedin />
-            </a>
-            <a href="https://github.com" target="_blank">
+            <a
+              href="https://github.com/panghuuuuu"
+              rel="noreferrer"
+              target="_blank"
+            >
               <BsGithub />
             </a>
-            <a href="https://gitlab.com" target="_blank">
+            <a
+              href="https://gitlab.com/panghuuuuu"
+              rel="noreferrer"
+              target="_blank"
+            >
               <AiFillGitlab />
             </a>
-            <a href="mailto:ysabellapanghulan@gmail.com" target="_blank">
+            <a
+              href="mailto:ysabellapanghulan@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
               <HiMail />
             </a>
           </div>

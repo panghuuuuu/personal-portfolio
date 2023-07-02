@@ -38,8 +38,14 @@
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 850px) {
   .skills__container {
     grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #skills {
+    height: 100vh;
   }
 }
