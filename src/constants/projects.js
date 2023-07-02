@@ -1,48 +1,30 @@
 import Main from "../assets/works/1.png";
-import Second from "../assets/works/2.jpeg";
-import Third from "../assets/works/3.jpeg";
-import Fourth from "../assets/works/4.png";
-import Fifth from "../assets/works/5.jpeg";
+import Cemetery from "../assets/works/3.png";
+import Goldstar from "../assets/works/4.png";
 
 export const Projects = {
-  "Project 1": {
+  "ILAW Database": {
     image: Main,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    github_link: "https://github.com/",
-    live_site: "https://",
-    technologies: ["Next.js", "Tailwind", "Firebase"],
+      "ILAW Database (Integrated Library Automated Website) is a user-friendly database created for St. Theresa's College QC students, providing easy access to research studies published in the Scifinds Publication. Built using PHP, CSS, and MySQL, this dynamic platform offers intuitive navigation and categorization, allowing students to browse and explore research across various subjects. The program's recognition with the Best Research Paper Award highlights its exceptional quality, and it has been successfully turned over to St. Theresa's College Quezon City for continued use and accessibility.",
+    github_link: "https://github.com/panghuuuuu/stcqc-database",
+    live_site: "",
+    technologies: ["PHP", "CSS", "MySQL", "000Webhost"],
   },
-  "Project 2": {
-    image: Second,
+  "Cemetery Crashers Game": {
+    image: Cemetery,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    github_link: "https://github.com/",
-    live_site: "https://",
-    technologies: ["Node", "Express", "Firebase", "Vue"],
+      "Cemetery Crashers is a two-player game that involves the players pushing each other off the platform. Once the opponent gets pushed off the platform, the player gets a point. Whoever reaches 5 points first, wins the game.",
+    github_link: "",
+    live_site: "",
+    technologies: ["Java"],
   },
-  "Project 3": {
-    image: Third,
+  "Goldstar Realty Website Migration": {
+    image: Goldstar,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    github_link: "https://github.com/",
-    live_site: "https://",
-    technologies: ["Flutter"],
-  },
-  "Project 4": {
-    image: Fourth,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    github_link: "https://github.com/",
-    live_site: "https://",
-    technologies: ["React", "Redux", "Heroko"],
-  },
-  "Project 5": {
-    image: Fifth,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    github_link: "https://github.com/",
-    live_site: "https://",
-    technologies: ["React", "Redux", "Heroko"],
+      "I provided troubleshooting services for Goldstar Realty Development Corporation's website, addressing an issue related to sourcing from Netlify CMS. Additionally, I facilitated the migration of the website to Netlify and successfully connected their newly purchased domain in GoDaddy. By resolving the sourcing problem and ensuring a smooth transition to the new hosting platform with the connected domain, I helped enhance the overall functionality and accessibility of Goldstar Realty Development Corporation's website.",
+    github_link: "",
+    live_site: "https://grdc.com.ph",
+    technologies: ["Netlify CMS", "GoDaddy", "Vue"],
   },
 };

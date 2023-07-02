@@ -16,7 +16,6 @@ import { SiDjango } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
 import { TbCurrencySolana } from "react-icons/tb";
 import { SiTableau } from "react-icons/si";
-import Icon from "../assets/skills.png";
 
 const Skills = () => {
   return (
@@ -30,9 +29,6 @@ const Skills = () => {
             platforms. Additionally, I have experience and expertise in{" "}
             <span>Web3 Development</span>.
           </p>
-          <div className="skills_icon">
-            <img src={Icon} alt="skills icon" />
-          </div>{" "}
         </div>
         <div className="skills-content">
           <h4>

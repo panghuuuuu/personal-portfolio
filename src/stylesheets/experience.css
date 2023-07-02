@@ -11,37 +11,6 @@
   display: inline-block;
 }
 
-.scroll-downs {
-  margin: 0 auto;
-  width: max-content;
-  position: relative;
-  z-index: -1;
-}
-
-.mousey {
-  width: 0.02rem;
-  padding: 10px 15px;
-  height: 1.5rem;
-  border: 0.1rem solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 0.09rem;
-  height: 0.4rem;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-  animation-iteration-count: infinite;
-}
-
-.scroll {
-  display: flex;
-  justify-content: center;
-}
 @keyframes scroll {
   0% {
     opacity: 0;

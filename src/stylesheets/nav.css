@@ -14,13 +14,12 @@ nav.scrolled {
   background-color: var(--color-bg);
   border-bottom: 2px solid black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 nav img {
-  width: 3rem;
   display: inline-block;
   vertical-align: middle;
+  max-height: 3rem;
 }
 
 nav img:hover {
