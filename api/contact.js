@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 
 const contactHandler = async (req, res) => {
   if (req.method === "POST") {
-    const formData = JSON.parse(req.body);
+    const formData = req.body;
 
     const mailOptions = {
       from: formData.email,
