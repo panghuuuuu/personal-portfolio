@@ -3,7 +3,7 @@ import "../stylesheets/contact.css";
 import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
-import Picture from "../assets/homepic.png";
+import Picture from "../assets/skills.png";
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -97,30 +97,30 @@ const Contact = () => {
         </div>
         <div className="contact__socials">
           <div className="contact_img">
-            <img src={Picture} alt="Ysabell Panghulan"></img>
-          </div>
-          <div className="contact__links">
-            <a
-              href="https://github.com/panghuuuuu"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <BsGithub />
-            </a>
-            <a
-              href="https://gitlab.com/panghuuuuu"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <AiFillGitlab />
-            </a>
-            <a
-              href="mailto:ysabellapanghulan@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <HiMail />
-            </a>
+            <img src={Picture} alt="Ysabella Panghulan"></img>
+            <div className="contact__links">
+              <a
+                href="https://github.com/panghuuuuu"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BsGithub />
+              </a>
+              <a
+                href="https://gitlab.com/panghuuuuu"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <AiFillGitlab />
+              </a>
+              <a
+                href="mailto:ysabellapanghulan@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <HiMail />
+              </a>
+            </div>
           </div>
         </div>
       </div>

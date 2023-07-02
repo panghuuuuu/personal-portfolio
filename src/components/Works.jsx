@@ -35,15 +35,19 @@ const Works = () => {
               setIsOpen(true);
             }}
           />
-          <h3> {key} </h3>
+          <h4> {key} </h4>
           <div className="tech_items">{techContent}</div>
           <div className="site_links">
-            <a href={value.github_link}>
-              <BsGithub />
-            </a>
-            <a href={value.live_site}>
-              <HiOutlineExternalLink />
-            </a>
+            {value.github_link && (
+              <a href={value.github_link} rel="noreferrer" target="_blank">
+                <BsGithub />
+              </a>
+            )}{" "}
+            {value.live_site && (
+              <a href={value.live_site} rel="noreferrer" target="_blank">
+                <HiOutlineExternalLink />
+              </a>
+            )}{" "}
           </div>
         </div>
       );
@@ -71,12 +75,16 @@ const Works = () => {
             <h2>{mainTitle}</h2>
             <div className="tech_items">{mainTech}</div>
             <div className="site_links">
-              <a href={mainGithub}>
-                <BsGithub />
-              </a>
-              <a href={mainLiveSite}>
-                <HiOutlineExternalLink />
-              </a>
+              {mainGithub && (
+                <a href={mainGithub} rel="noreferrer" target="_blank">
+                  <BsGithub />
+                </a>
+              )}{" "}
+              {mainLiveSite && (
+                <a href={mainLiveSite} rel="noreferrer" target="_blank">
+                  <HiOutlineExternalLink />
+                </a>
+              )}{" "}
             </div>
           </div>
           <div className="sub__projects">{works}</div>
@@ -84,16 +92,30 @@ const Works = () => {
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
           {selectedProj && (
             <>
-              <img src={Projects[selectedProj].image} alt={selectedProj} />
+              <div className="modal_img">
+                <img src={Projects[selectedProj].image} alt={selectedProj} />
+              </div>
               <h2>{selectedProj}</h2>
               <h5>{Projects[selectedProj].description}</h5>
               <div className="site_links">
-                <a href={Projects[selectedProj].github_link}>
-                  <BsGithub />
-                </a>
-                <a href={Projects[selectedProj].live_site}>
-                  <HiOutlineExternalLink />
-                </a>
+                {Projects[selectedProj].github_link && (
+                  <a
+                    href={Projects[selectedProj].github_link}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <BsGithub />
+                  </a>
+                )}{" "}
+                {Projects[selectedProj].live_site && (
+                  <a
+                    href={Projects[selectedProj].live_site}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <HiOutlineExternalLink />
+                  </a>
+                )}{" "}
               </div>
             </>
           )}

@@ -19,11 +19,11 @@ const Header = () => {
             I am a <span>Full-Stack Developer</span> with extensive experience
             in developing both <span>web and mobile applications</span>. I have
             expertise in a range of front-end and back-end technologies. My
-            knowledge in <span>data science </span>
+            knowledge in <span>data science and articifial intelligence </span>
             allows me to integrate machine learning algorithms and analytics
             tools into my applications to provide valuable insights for users. I
-            enjoy building robust and scalable systems that meet the most
-            demanding requirements.{" "}
+            am passionate about building technologies that are beneficial to the
+            community.{" "}
           </h4>
           <HeaderSocials />
           <div className="header__buttons">

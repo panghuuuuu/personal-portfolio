@@ -50,6 +50,10 @@ textarea {
   justify-content: center;
 }
 
+.contact_img {
+  justify-content: center;
+  margin-top: 50%;
+}
 .contact_img img {
   min-width: 20rem;
   max-width: 25rem;
@@ -65,6 +69,7 @@ textarea {
 }
 
 .contact__links {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
 }

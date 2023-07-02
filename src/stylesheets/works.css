@@ -3,7 +3,8 @@
 }
 
 #works h2,
-h3 {
+#works h3,
+#works h4 {
   text-align: center;
 }
 
@@ -34,6 +35,7 @@ span.tech {
 .sub__projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
 }
 
 .site_links {
@@ -48,6 +50,10 @@ span.tech {
 
 .site_links a:hover {
   color: var(--color-primary);
+}
+
+.modal_img img {
+  max-height: 20rem;
 }
 
 @media screen and (max-width: 1080px) {
