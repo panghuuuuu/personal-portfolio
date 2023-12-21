@@ -26,18 +26,6 @@ span.tech {
   display: flex;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 0.5rem;
-}
-
-.sub__projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5rem;
-}
-
 .site_links {
   display: flex;
   justify-content: center;

@@ -1,6 +1,6 @@
 import Main from "../assets/works/1.png";
 import Cemetery from "../assets/works/3.png";
-import Goldstar from "../assets/works/4.png";
+import Guidon from "../assets/works/4.png";
 
 export const Projects = {
   "ILAW Database": {
@@ -19,12 +19,12 @@ export const Projects = {
     live_site: "",
     technologies: ["Java"],
   },
-  "Goldstar Realty Website Migration": {
-    image: Goldstar,
+  "UAAP Season 86 Primer - First Semester": {
+    image: Guidon,
     description:
       "I provided troubleshooting services for Goldstar Realty Development Corporation's website, addressing an issue related to sourcing from Netlify CMS. Additionally, I facilitated the migration of the website to Netlify and successfully connected their newly purchased domain in GoDaddy. By resolving the sourcing problem and ensuring a smooth transition to the new hosting platform with the connected domain, I helped enhance the overall functionality and accessibility of Goldstar Realty Development Corporation's website.",
-    github_link: "",
-    live_site: "https://grdc.com.ph",
-    technologies: ["Netlify CMS", "GoDaddy", "Vue"],
+    github_link: "https://github.com/theguidon/uaap86-1",
+    live_site: "https://theguidon.com/1112/main/uaap-86-primer-volume-1/",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
 };
