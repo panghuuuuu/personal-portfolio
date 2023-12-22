@@ -45,7 +45,6 @@ nav button {
 }
 
 .links a:hover {
-  border-bottom: 0.1rem solid var(--color-primary);
   color: var(--color-primary);
 }
 

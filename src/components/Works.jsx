@@ -7,7 +7,6 @@ import { Projects } from "../constants/projects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 
-// Import Swiper styles
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
@@ -40,8 +39,8 @@ const Works = () => {
           }}
         />
         <h4> {key} </h4>
-        {/* <div className="tech_items">{techContent}</div> */}
-        {/* <div className="site_links">
+        <div className="tech_items">{techContent}</div>
+        <div className="site_links">
           {value.github_link && (
             <a href={value.github_link} rel="noreferrer" target="_blank">
               <BsGithub />
@@ -52,7 +51,7 @@ const Works = () => {
               <HiOutlineExternalLink />
             </a>
           )}{" "}
-        </div> */}
+        </div>
       </SwiperSlide>
     );
   });

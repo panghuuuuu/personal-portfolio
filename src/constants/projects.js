@@ -23,7 +23,7 @@ export const Projects = {
     image: Guidon,
     description:
       "I provided troubleshooting services for Goldstar Realty Development Corporation's website, addressing an issue related to sourcing from Netlify CMS. Additionally, I facilitated the migration of the website to Netlify and successfully connected their newly purchased domain in GoDaddy. By resolving the sourcing problem and ensuring a smooth transition to the new hosting platform with the connected domain, I helped enhance the overall functionality and accessibility of Goldstar Realty Development Corporation's website.",
-    github_link: "https://github.com/theguidon/uaap86-1",
+    github_link: "",
     live_site: "https://theguidon.com/1112/main/uaap-86-primer-volume-1/",
     technologies: ["HTML", "CSS", "JavaScript"],
   },

@@ -8,8 +8,8 @@
   text-align: center;
 }
 
-.sub__projects img {
-  height: 60%;
+.indiv__project img {
+  height: 350px;
 }
 
 span.tech {
@@ -29,6 +29,7 @@ span.tech {
 .site_links {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .site_links a {
