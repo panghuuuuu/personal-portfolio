@@ -9,6 +9,9 @@
   position: relative;
 }
 
+.header__container img {
+  width: 5rem;
+}
 .header__text {
   margin-top: 3rem;
 }

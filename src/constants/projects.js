@@ -6,7 +6,7 @@ export const Projects = {
   "ILAW Database": {
     image: Main,
     description:
-      "ILAW Database (Integrated Library Automated Website) is a user-friendly database created for St. Theresa's College QC students, providing easy access to research studies published in the Scifinds Publication. Built using PHP, CSS, and MySQL, this dynamic platform offers intuitive navigation and categorization, allowing students to browse and explore research across various subjects. The program's recognition with the Best Research Paper Award highlights its exceptional quality, and it has been successfully turned over to St. Theresa's College Quezon City for continued use and accessibility.",
+      "ILAW Database (Integrated Library Automated Website) is a user-friendly database created for St. Theresa's College QC students, providing easy access to research studies published in the Scifinds Publication.",
     github_link: "https://github.com/panghuuuuu/stcqc-database",
     live_site: "",
     technologies: ["PHP", "CSS", "MySQL", "000Webhost"],
@@ -22,7 +22,7 @@ export const Projects = {
   "UAAP Season 86 Primer - First Semester": {
     image: Guidon,
     description:
-      "I provided troubleshooting services for Goldstar Realty Development Corporation's website, addressing an issue related to sourcing from Netlify CMS. Additionally, I facilitated the migration of the website to Netlify and successfully connected their newly purchased domain in GoDaddy. By resolving the sourcing problem and ensuring a smooth transition to the new hosting platform with the connected domain, I helped enhance the overall functionality and accessibility of Goldstar Realty Development Corporation's website.",
+      "The GUIDON Sports' First Semester Digital Primer that shows the lessons, narratives, and expectations that the Blue Eagles shared coming into UAAP Season 86",
     github_link: "",
     live_site: "https://theguidon.com/1112/main/uaap-86-primer-volume-1/",
     technologies: ["HTML", "CSS", "JavaScript"],

@@ -1,15 +1,10 @@
 #works {
   margin-top: 8rem;
+  height: 100vh;
 }
 
-#works h2,
-#works h3,
-#works h4 {
-  text-align: center;
-}
-
-.indiv__project img {
-  height: 350px;
+.swiper-slide {
+  background-size: cover;
 }
 
 span.tech {
@@ -18,6 +13,9 @@ span.tech {
   padding: 0.3rem;
   border-radius: 0.4rem;
   margin: 0.2rem;
+}
+.project-details {
+  height: 60vh;
 }
 
 .tech_items {
@@ -46,15 +44,8 @@ span.tech {
 }
 
 @media screen and (max-width: 1080px) {
-  .projects,
-  .sub__projects {
+  .indiv__project {
     display: grid;
     grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  #works {
-    height: 100vh;
   }
 }

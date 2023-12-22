@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderSocials from "./HeaderSocials";
 import "../stylesheets/header.css";
+import Picture from "../assets/skills.png";
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
         <div className="header__content">
           <div className="header__text">
             <h4 className="intro">Hello, I am</h4>
+            <img src={Picture} alt="Ysabella Panghulan"></img>
             <h1>
               Ysabella Panghulan<span>.</span>
             </h1>
@@ -16,13 +18,10 @@ const Header = () => {
           </div>
           <h4 className="header__bottom">
             {" "}
-            I am a <span>Full-Stack Developer</span> with extensive experience
-            in developing both <span>web and mobile applications</span>. I have
-            expertise in a range of front-end and back-end technologies. My
-            knowledge in <span>data science and articifial intelligence </span>
-            allows me to integrate machine learning algorithms and analytics
-            tools into my applications to provide valuable insights for users. I
-            am passionate about building technologies that are beneficial to the
+            I am a <span>Full-Stack Developer</span>, developing both{" "}
+            <span>web and mobile applications</span>. I am also interested in
+            <span>data science and articifial intelligence </span>I am
+            passionate about building technologies that are beneficial to the
             community.{" "}
           </h4>
           <HeaderSocials />
