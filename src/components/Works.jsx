@@ -1,27 +1,63 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../stylesheets/works.css";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { BsGithub } from "react-icons/bs";
 import { Projects } from "../constants/projects";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
+import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
 
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/effect-coverflow/effect-coverflow.scss";
 
-SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
+SwiperCore.use([Navigation, EffectCoverflow]);
+
 const Works = () => {
+  const [swiper, setSwiper] = useState(null);
   const [activeSlide, setActiveSlide] = useState(0);
+
+  const projects = Object.entries(Projects);
+  const numberOfSlides = projects.length;
+
+  const handleSlideChange = () => {
+    if (swiper) {
+      setActiveSlide(swiper.realIndex);
+    }
+  };
+
+  useEffect(() => {
+    if (swiper) {
+      swiper.on("slideChange", handleSlideChange);
+    }
+  }, [swiper]);
+
+  const handlePaginationClick = (index) => {
+    console.log("Index click:", index);
+    if (swiper) {
+      setActiveSlide(index);
+    }
+  };
 
   return (
     <section id="works">
+      <style>
+        {`
+        .swiper-slide {
+          height: 80vh;
+        }
+        .swiper-slide-active {
+          width: 980px !important;
+        }
+        .swiper-slide-prev, .swiper-slide-next {
+          width: 500px !important;
+        }
+        `}
+      </style>
       <div className="projects">
         <Swiper
           navigation
           loop={true}
-          pagination={{ clickable: true }}
           effect="coverflow"
           coverflowEffect={{
             rotate: 0,
@@ -32,9 +68,8 @@ const Works = () => {
           }}
           slidesPerView={2}
           centeredSlides
-          onTransitionEnd={(swiper) => {
-            setActiveSlide(swiper.realIndex);
-          }}
+          onTransitionEnd={handleSlideChange}
+          onSwiper={(swiper) => setSwiper(swiper)}
         >
           {Object.entries(Projects).map(([key, value], index) => {
             const techContent = value.technologies.map((item, index) => (
@@ -82,12 +117,22 @@ const Works = () => {
                       </div>
                     </div>
                   )}
-                  {!isCurrentSlide && <img src={value.image} alt={key} />}
                 </div>
               </SwiperSlide>
             );
           })}
         </Swiper>
+        <div className="pagination-container">
+          {Array.from({ length: numberOfSlides }).map((_, index) => (
+            <div
+              key={index}
+              className={`pagination-bullet ${
+                index === activeSlide ? "active" : ""
+              }`}
+              onClick={() => handlePaginationClick(index)}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
