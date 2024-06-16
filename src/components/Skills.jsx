@@ -6,10 +6,11 @@ import { DiJavascript } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { DiReact } from "react-icons/di";
-import { RiVuejsLine } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { DiPhp } from "react-icons/di";
+import { FaLaravel } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { SiDjango } from "react-icons/si";
@@ -56,8 +57,8 @@ const Skills = () => {
             <br></br> React
           </h4>
           <h4>
-            <RiVuejsLine className="skills__details-icon" />
-            <br></br> Vue
+            <TbBrandNextjs className="skills__details-icon" />
+            <br></br> Next.js
           </h4>
           <h4>
             <DiNodejsSmall className="skills__details-icon" />
@@ -70,6 +71,10 @@ const Skills = () => {
           <h4>
             <DiPhp className="skills__details-icon" />
             <br></br> PHP
+          </h4>
+          <h4>
+            <FaLaravel className="skills__details-icon" />
+            <br></br> Laravel
           </h4>
           <h4>
             <DiMysql className="skills__details-icon" />

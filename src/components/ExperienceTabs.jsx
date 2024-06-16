@@ -59,13 +59,9 @@ const ExperienceTabs = () => {
             <h2>{position}</h2>
             <h4>{year}</h4>
             <div className="desc-list">
-              <ul>
-                {arrDesc.map((desc, i) => (
-                  <li key={i}>
-                    <h4>{desc}</h4>
-                  </li>
-                ))}
-              </ul>
+              {arrDesc.map((desc, i) => (
+                <h4>{desc}</h4>
+              ))}
             </div>
             <br />
           </div>

@@ -1,23 +1,23 @@
 import Main from "../assets/works/1.png";
-import Cemetery from "../assets/works/3.png";
+import Aegis from "../assets/works/5.png";
 import Guidon from "../assets/works/4.png";
 
 export const Projects = {
   "ILAW Database": {
     image: Main,
     description:
-      "ILAW Database (Integrated Library Automated Website) is a user-friendly database created for St. Theresa's College QC students, providing easy access to research studies published in the Scifinds Publication.",
+      "The Integrated Library Automated Website or ILAW research database helps St. Theresa's College Q.C. students and teachers organize and access Theresians' academic journals and research papers.",
     github_link: "https://github.com/panghuuuuu/stcqc-database",
     live_site: "",
-    technologies: ["PHP", "CSS", "MySQL", "000Webhost"],
+    technologies: ["PHP", "CSS", "MySQL"],
   },
-  "Cemetery Crashers Game": {
-    image: Cemetery,
+  "AEGIS Photoshoot Enlistment Website": {
+    image: Aegis,
     description:
-      "Cemetery Crashers is a two-player game that involves the players pushing each other off the platform. Once the opponent gets pushed off the platform, the player gets a point. Whoever reaches 5 points first, wins the game.",
+      "Built an automated signup system for Ateneo's senior photoshoot season, handling 2,500+ signups (individual & group) and improving the user experience for both students and administrators.",
     github_link: "",
-    live_site: "",
-    technologies: ["Java"],
+    live_site: "https://aegis.ateneo.edu/",
+    technologies: ["Next.js", "ReactJS", "Django REST"],
   },
   "UAAP Season 86 Primer - First Semester": {
     image: Guidon,

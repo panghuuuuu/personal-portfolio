@@ -2,13 +2,26 @@
   text-align: center;
 }
 
-.experience__container {
-  text-align: left;
+.experience {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-#experience a {
-  margin: 2rem;
-  display: inline-block;
+.left_container {
+  flex: 1;
+}
+.right_container {
+  text-align: left;
+  flex: 3;
+}
+
+.position_title {
+  color: #f1f1f1;
+}
+
+.position_desc {
+  color: var(--color-light);
+  font-size: 15px;
 }
 
 @keyframes scroll {
