@@ -1,0 +1,50 @@
+#experience {
+  text-align: center;
+}
+
+.experience {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.left_container {
+  flex: 1;
+}
+.right_container {
+  text-align: left;
+  flex: 3;
+}
+
+.position_title {
+  color: #f1f1f1;
+}
+
+.position_desc {
+  color: var(--color-light);
+  font-size: 15px;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scroll,
+  .scroll-downs {
+    display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #experience {
+    height: 100vh;
+  }
+}

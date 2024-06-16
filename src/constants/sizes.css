@@ -1,0 +1,6 @@
+:root {
+  --transition: all 400ms ease;
+  --container-width-large: 75%;
+  --containder-width-mid: 90%;
+  --containder-width-small: 100%;
+}

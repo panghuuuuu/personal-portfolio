@@ -1,0 +1,89 @@
+#works {
+  height: 100vh;
+}
+
+.projects {
+  display: flex;
+  overflow: scroll;
+}
+
+.project_details {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  flex: 1;
+  gap: 1rem;
+}
+
+.project_title a {
+  display: flex;
+  align-items: center;
+}
+
+.project_title,
+.project_title a {
+  display: flex;
+  gap: 10px;
+  color: var(--color-white);
+}
+.project_img {
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 12px;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.project_desc {
+  font-size: 15px;
+}
+
+span.tech {
+  background-color: var(--color-bg-variant);
+  color: var(--color-primary-variant);
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+}
+
+.tech_items {
+  display: flex;
+}
+
+.project_title a:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.modal_img img {
+  max-height: 20rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .indiv__project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  transition: 300ms opacity;
+  margin-top: 1rem;
+}
+
+.pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 253, 253, 0.794);
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.pagination-bullet.active {
+  background-color: var(--color-primary);
+  opacity: 1;
+}
