@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../stylesheets/experience.css";
 import { Position } from "../constants/experience.js";
 import { MdArrowOutward } from "react-icons/md";
-
 const Experience = () => {
   const [showMore, setShowMore] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const maxCompaniesToShow = 3;
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,19 +26,27 @@ const Experience = () => {
   };
 
   let content = [];
-  Object.entries(Position).forEach(([key, value], i) => {
-    const company = value.company;
-    const link = value.link;
-    const positions = value.positions;
+  const companies = Object.keys(Position);
+
+  const slicedCompanies = companies.slice(
+    0,
+    showMore ? companies.length : maxCompaniesToShow
+  );
+
+  slicedCompanies.forEach((companyName, i) => {
+    const companyData = Position[companyName];
+    const company = companyData.company;
+    const link = companyData.link;
+    const positions = companyData.positions;
 
     content.push(
-      <div key={`${key}-${i}`} className="experience">
+      <div key={companyName} className="experience">
         <div className="left_container">
           <p>
-            {key.split("\n").map((line, i) => (
+            {companyName.split("\n").map((line, i) => (
               <p key={i}>
                 {line}
-                {i !== key.split("\n").length - 1 && <br />}{" "}
+                {i !== companyName.split("\n").length - 1 && <br />}{" "}
               </p>
             ))}
           </p>
@@ -52,11 +60,14 @@ const Experience = () => {
           </a>
           <div className="positions-list">
             {positions.map((pos, j) => (
-              <div key={`${key}-${i}-${j}`} className="position">
+              <div key={`${companyName}-${j}`} className="position">
                 <h3 className="position_title">{pos.position}</h3>
                 <ul>
                   {pos.description.map((desc, k) => (
-                    <li className="position_desc" key={`${key}-${i}-${j}-${k}`}>
+                    <li
+                      className="position_desc"
+                      key={`${companyName}-${j}-${k}`}
+                    >
                       {desc}
                     </li>
                   ))}
@@ -68,9 +79,19 @@ const Experience = () => {
       </div>
     );
   });
+
   return (
     <section id="experience">
-      <div className="container experience__container">{content}</div>
+      <div className="container experience__container">
+        {content}
+        {companies.length > maxCompaniesToShow && (
+          <div className="show-more-btn" onClick={handleShowMore}>
+            {showMore
+              ? "Show Less"
+              : `Show More (${companies.length - maxCompaniesToShow})`}
+          </div>
+        )}
+      </div>
     </section>
   );
 };

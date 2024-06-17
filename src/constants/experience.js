@@ -1,4 +1,17 @@
 export const Position = {
+  "2023-2024": {
+    company: "The Guidon",
+    link: "https://theguidon.com/",
+    positions: [
+      {
+        position: "Digital Development Staff",
+        description: [
+          "Enhanced the mobile responsiveness of The Guidon Archives during the development process using Tailwind and React",
+          "Developed The Guidon UAAP Season 86 Primer using HTML, CSS, and JavaScript",
+        ],
+      },
+    ],
+  },
   "2022\n2023 ": {
     company: "Web Head • Ateneo Orientation Seminar",
     link: "https://www.facebook.com/2022OrSem/",

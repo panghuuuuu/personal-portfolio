@@ -24,6 +24,16 @@
   font-size: 15px;
 }
 
+.show-more-btn {
+  color: var(--color-light);
+  transition: 300ms;
+}
+
+.show-more-btn:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
 @keyframes scroll {
   0% {
     opacity: 0;

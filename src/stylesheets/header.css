@@ -51,6 +51,17 @@
   margin-right: 1rem;
 }
 
+.resume-btn {
+  color: var(--color-primary);
+  transition: 300ms;
+  margin-top: 3rem;
+}
+
+.resume-btn:hover {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1080px) {
   .header__socials {
     display: flex;
