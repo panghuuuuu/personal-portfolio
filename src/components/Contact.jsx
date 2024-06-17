@@ -1,10 +1,10 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import "../stylesheets/contact.css";
 import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 import Picture from "../assets/skills.png";
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -30,92 +30,97 @@ const Contact = () => {
         break;
     }
   };
-  const handleSubmit = () => {
-    const formData = {
-      firstName,
-      lastName,
-      email,
-      message,
-    };
 
-    axios
-      .post("/api/contact", formData)
-      .then((response) => {
-        console.log(response.data);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then((result) => {
+        console.log(result.text);
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Failed to send message:", error);
       });
   };
+
   return (
     <section id="contact">
       <div className="container contact__container">
         <div className="textarea">
           <div className="intro">
-            <h1> Contact Me </h1>
+            <h1>Contact Me</h1>
             <h4>
-              {" "}
               Hey there! Don't hesitate to hit me up if you have any
               opportunities in mind. And if you just want to chat randomly, feel
-              free to do so too!{" "}
+              free to do so too!
             </h4>
           </div>
           <div className="form">
-            <div className="name">
+            <form onSubmit={handleSubmit}>
+              <div className="name">
+                <div className="label">
+                  <p>First Name</p>
+                </div>
+                <input
+                  type="text"
+                  name="firstName"
+                  value={firstName}
+                  placeholder="John"
+                  onChange={handleInputChange}
+                  required
+                />
+                <div className="label">
+                  <p>Last Name</p>
+                </div>
+                <input
+                  type="text"
+                  className="name"
+                  name="lastName"
+                  value={lastName}
+                  placeholder="Doe"
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
               <div className="label">
-                <p>First Name</p>
+                <p>Email</p>
               </div>
               <input
-                type="text"
-                name="firstName"
-                value={firstName}
-                placeholder="John"
+                type="email"
+                className="email"
+                name="email"
+                value={email}
+                placeholder="johndoe@gmail.com"
                 onChange={handleInputChange}
                 required
               />
               <div className="label">
-                <p>Last Name</p>
+                <p>Message</p>
               </div>
-              <input
-                type="text"
-                className="name"
-                name="lastName"
-                value={lastName}
-                placeholder="Doe"
+              <textarea
+                className="message"
+                name="message"
+                value={message}
+                placeholder="Send me a message"
                 onChange={handleInputChange}
                 required
               />
-            </div>
-            <div className="label">
-              <p>Email</p>
-            </div>
-            <input
-              type="email"
-              className="email"
-              name="email"
-              value={email}
-              placeholder="johndoe@gmail.com"
-              onChange={handleInputChange}
-              required
-            />
-            <div className="label">
-              <p>Message</p>
-            </div>
-            <textarea
-              className="message"
-              name="message"
-              value={message}
-              placeholder="Send me a message"
-              onChange={handleInputChange}
-              required
-            />
-            <div className="submit_btn">
-              <form onSubmit={handleSubmit}>
+              <div className="submit_btn">
                 <button type="submit" className="btn btn-primary">
                   Submit
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
         <div className="contact__socials">

@@ -1,5 +1,5 @@
 export const Position = {
-  "2022\n2023": {
+  "2022\n2023 ": {
     company: "Web Head • Ateneo Orientation Seminar",
     link: "https://www.facebook.com/2022OrSem/",
     positions: [
