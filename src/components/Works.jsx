@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../stylesheets/works.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Projects } from "../constants/projects";
@@ -18,7 +18,7 @@ const Works = () => {
 
           return (
             <div key={index} className="project_details">
-              <img src={value.image} className="project_img" />
+              <img src={value.image} className="project_img" alt={key} />
               <h3 className="project_title">
                 {value.github_link && (
                   <a href={value.github_link} rel="noreferrer" target="_blank">

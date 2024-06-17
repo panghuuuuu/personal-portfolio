@@ -4,6 +4,7 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
 
 const HeaderSocials = () => {
   return (
@@ -15,6 +16,15 @@ const HeaderSocials = () => {
         {" "}
         <AiFillGitlab />
       </a>
+      <a
+        href="https://www.linkedin.com/in/ysabella-panghulan-668019306"
+        rel="noreferrer"
+        target="_blank"
+      >
+        {" "}
+        <FaLinkedin />
+      </a>
+
       <a
         href="mailto:ysabellapanghulan@gmail.com"
         rel="noreferrer"

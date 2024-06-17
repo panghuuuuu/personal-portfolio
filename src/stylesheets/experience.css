@@ -21,7 +21,7 @@
 
 .position_desc {
   color: var(--color-light);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .show-more-btn {
@@ -51,6 +51,19 @@
   .scroll,
   .scroll-downs {
     display: none;
+  }
+  .experience {
+    flex-direction: column;
+  }
+  .left_container {
+    text-align: left;
+  }
+  .company_name {
+    font-size: larger;
+  }
+
+  .position_title {
+    font-size: large;
   }
 }
 @media screen and (min-width: 1080px) {

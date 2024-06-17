@@ -12,7 +12,7 @@ export const Position = {
       },
     ],
   },
-  "2022\n2023 ": {
+  "Jun - Aug 2022\nJun - Aug 2023 ": {
     company: "Web Head • Ateneo Orientation Seminar",
     link: "https://www.facebook.com/2022OrSem/",
     positions: [
