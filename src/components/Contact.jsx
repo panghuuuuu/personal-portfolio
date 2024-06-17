@@ -5,13 +5,15 @@ import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 import Picture from "../assets/skills.png";
 import emailjs from "@emailjs/browser";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const [open, setOpen] = useState(false);
   const handleInputChange = (event) => {
     switch (event.target.name) {
       case "firstName":
@@ -30,6 +32,13 @@ const Contact = () => {
         break;
     }
   };
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,11 +51,11 @@ const Contact = () => {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then((result) => {
-        console.log(result.text);
         setFirstName("");
         setLastName("");
         setEmail("");
         setMessage("");
+        setOpen(true);
       })
       .catch((error) => {
         console.error("Failed to send message:", error);
@@ -119,6 +128,20 @@ const Contact = () => {
                 <button type="submit" className="btn btn-primary">
                   Submit
                 </button>
+                <Snackbar
+                  open={open}
+                  autoHideDuration={6000}
+                  onClose={handleClose}
+                >
+                  <Alert
+                    onClose={handleClose}
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                  >
+                    Message Successfully sent!
+                  </Alert>
+                </Snackbar>
               </div>
             </form>
           </div>
