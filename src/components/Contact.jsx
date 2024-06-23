@@ -3,6 +3,7 @@ import "../stylesheets/contact.css";
 import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
+import { FaLinkedin } from "react-icons/fa";
 import Picture from "../assets/skills.png";
 import emailjs from "@emailjs/browser";
 import Snackbar from "@mui/material/Snackbar";
@@ -163,6 +164,13 @@ const Contact = () => {
                 target="_blank"
               >
                 <AiFillGitlab />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ysabella-panghulan-668019306"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FaLinkedin />
               </a>
               <a
                 href="mailto:ysabellapanghulan@gmail.com"

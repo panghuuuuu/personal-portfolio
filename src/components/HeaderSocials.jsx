@@ -13,7 +13,6 @@ const HeaderSocials = () => {
         <BsGithub />
       </a>
       <a href="https://gitlab.com/panghuuuuu" rel="noreferrer" target="_blank">
-        {" "}
         <AiFillGitlab />
       </a>
       <a
@@ -21,10 +20,8 @@ const HeaderSocials = () => {
         rel="noreferrer"
         target="_blank"
       >
-        {" "}
         <FaLinkedin />
       </a>
-
       <a
         href="mailto:ysabellapanghulan@gmail.com"
         rel="noreferrer"
