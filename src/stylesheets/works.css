@@ -56,13 +56,8 @@ span.tech {
   color: var(--color-primary);
   cursor: pointer;
 }
-@media screen and (min-width: 680px) {
-  .project_img {
-    width: 60vw;
-  }
-}
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1180px) {
   .project_img {
     width: 90vw;
   }
