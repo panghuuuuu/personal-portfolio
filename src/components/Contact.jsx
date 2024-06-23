@@ -4,7 +4,6 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillGitlab } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
-import Picture from "../assets/skills.png";
 import emailjs from "@emailjs/browser";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
@@ -66,15 +65,58 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container contact__container">
-        <div className="textarea">
-          <div className="intro">
-            <h1>Contact Me</h1>
-            <h4>
-              Hey there! Don't hesitate to hit me up if you have any
-              opportunities in mind. And if you just want to chat randomly, feel
-              free to do so too!
-            </h4>
+        <div className="contact__socials">
+          <h4>
+            Hey there! Don't hesitate to hit me up if you have any opportunities
+            in mind. And if you just want to chat randomly, feel free to do so
+            too!
+          </h4>
+
+          <div className="contact__links">
+            <a
+              className="contact_details"
+              href="https://github.com/panghuuuuu"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <BsGithub /> {""}
+              <p>
+                Ysabella Panghulan <span>panghuuuuu</span>
+              </p>
+            </a>
+            <a
+              className="contact_details"
+              href="https://gitlab.com/panghuuuuu"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillGitlab />
+              <p>
+                panghuuuuu <span>@panghuuuuu</span>
+              </p>
+            </a>
+            <a
+              className="contact_details"
+              href="https://www.linkedin.com/in/ysabella-panghulan-668019306"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaLinkedin />
+              <p>Ysabella Panghulan</p>
+            </a>
+            <a
+              className="contact_details"
+              href="mailto:ysabellapanghulan@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <HiMail />
+              <p>ysabellapanghulan@gmail.com</p>
+            </a>
           </div>
+        </div>
+
+        <div className="contact_form">
           <div className="form">
             <form onSubmit={handleSubmit}>
               <div className="name">
@@ -145,41 +187,6 @@ const Contact = () => {
                 </Snackbar>
               </div>
             </form>
-          </div>
-        </div>
-        <div className="contact__socials">
-          <div className="contact_img">
-            <img src={Picture} alt="Ysabella Panghulan"></img>
-            <div className="contact__links">
-              <a
-                href="https://github.com/panghuuuuu"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <BsGithub />
-              </a>
-              <a
-                href="https://gitlab.com/panghuuuuu"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <AiFillGitlab />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ysabella-panghulan-668019306"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="mailto:ysabellapanghulan@gmail.com"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <HiMail />
-              </a>
-            </div>
           </div>
         </div>
       </div>
