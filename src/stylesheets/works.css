@@ -4,8 +4,8 @@
 
 .projects {
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .project_details {
@@ -76,5 +76,11 @@ span.tech {
   }
   .tech_items {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .project_details {
+    min-width: 30vw;
   }
 }

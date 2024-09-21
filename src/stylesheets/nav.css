@@ -19,7 +19,6 @@ nav.scrolled {
 nav img {
   display: inline-block;
   vertical-align: middle;
-  max-height: 3rem;
 }
 
 nav img:hover {
@@ -28,7 +27,9 @@ nav img:hover {
 
 .main_logo {
   margin-left: 11%;
+  width: 3vw;
 }
+
 nav button {
   background-color: transparent;
 }
@@ -77,5 +78,9 @@ nav button {
   .links a {
     font-size: larger;
     text-transform: uppercase;
+  }
+
+  .main_logo {
+    width: 8vw;
   }
 }

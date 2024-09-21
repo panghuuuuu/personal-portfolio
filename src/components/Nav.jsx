@@ -32,7 +32,7 @@ const Nav = () => {
   };
 
   const checkScreenSize = () => {
-    setIsSmallScreen(window.innerWidth < 768); // Adjust breakpoint as needed
+    setIsSmallScreen(window.innerWidth < 768);
   };
 
   useEffect(() => {
@@ -73,13 +73,12 @@ const Nav = () => {
   return (
     <nav className={scrolled || currentSection !== "#header" ? "scrolled" : ""}>
       <div className="main_logo">
-        <button onClick={scrollToTop}>
-          <img
-            src={Logo}
-            alt="Logo"
-            className={currentSection === "#header" ? "active-sec" : ""}
-          />
-        </button>
+        <img
+          src={Logo}
+          alt="Logo"
+          className={currentSection === "#header" ? "active-sec" : ""}
+          onClick={scrollToTop}
+        />
       </div>
       <div className="links">
         {isSmallScreen ? (

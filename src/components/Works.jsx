@@ -2,9 +2,26 @@ import React from "react";
 import "../stylesheets/works.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Projects } from "../constants/projects";
+import "react-horizontal-scrolling-menu/dist/styles.css";
 
 const Works = () => {
   const projects = Object.entries(Projects);
+
+  const [selected, setSelected] = React.useState([]);
+
+  const isItemSelected = (id) => !!selected.find((el) => el === id);
+
+  const handleClick =
+    (id) =>
+    ({ getItemById, scrollToItem }) => {
+      const itemSelected = isItemSelected(id);
+
+      setSelected((currentSelected) =>
+        itemSelected
+          ? currentSelected.filter((el) => el !== id)
+          : currentSelected.concat(id)
+      );
+    };
 
   return (
     <section id="works">
