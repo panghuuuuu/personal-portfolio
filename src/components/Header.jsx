@@ -14,7 +14,7 @@ const Header = () => {
         <div className="header__content">
           <div className="header__text">
             <h1>Ysabella Panghulan</h1>
-            <h2>Developer</h2>
+            <h2>Fullstack Developer</h2>
           </div>
           <h4 className="header__bottom">
             {" "}

@@ -11,7 +11,8 @@ import { DiMongodb } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { DiPhp } from "react-icons/di";
 import { FaLaravel } from "react-icons/fa";
-import { DiMysql } from "react-icons/di";
+import { SiMysql } from "react-icons/si";
+import { DiPostgresql } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { SiDjango } from "react-icons/si";
 import { SiFlutter } from "react-icons/si";
@@ -27,8 +28,7 @@ const Skills = () => {
             I possess a wide range of knowledge on various tech stacks and
             programming languages, particularly in{" "}
             <span>full-stack development</span> for both web and mobile
-            platforms. Additionally, I have experience and expertise in{" "}
-            <span>Web3 Development</span>.
+            platforms.
           </p>
         </div>
         <div className="skills-content">
@@ -65,10 +65,6 @@ const Skills = () => {
             <br></br> Node JS
           </h4>
           <h4>
-            <DiMongodb className="skills__details-icon" />
-            <br></br> Mongo DB
-          </h4>
-          <h4>
             <DiPhp className="skills__details-icon" />
             <br></br> PHP
           </h4>
@@ -77,8 +73,21 @@ const Skills = () => {
             <br></br> Laravel
           </h4>
           <h4>
-            <DiMysql className="skills__details-icon" />
+            <SiMysql className="skills__details-icon" />
             <br></br> MySQL
+          </h4>
+          <h4>
+            <DiPostgresql className="skills__details-icon" />
+            <br></br> PostgreSQL
+          </h4>
+          <h4>
+            <DiMongodb className="skills__details-icon" />
+            <br></br> Mongo DB
+          </h4>
+
+          <h4>
+            <SiMysql className="skills__details-icon" />
+            <br></br> PostgreSQL
           </h4>
           <h4>
             <DiPython className="skills__details-icon" />
@@ -92,10 +101,10 @@ const Skills = () => {
             <SiFlutter className="skills__details-icon" />
             <br></br> Flutter
           </h4>
-          <h4>
+          {/* <h4>
             <TbCurrencySolana className="skills__details-icon" />
             <br></br> Solana
-          </h4>
+          </h4> */}
           <h4>
             <SiTableau className="skills__details-icon" />
             <br></br> Tableau

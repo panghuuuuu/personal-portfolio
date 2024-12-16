@@ -1,4 +1,18 @@
 export const Position = {
+  "June 2024 - Present": {
+    company: "Hackazouk Inc.",
+    link: "https://www.hackazouk.com/",
+    positions: [
+      {
+        position: "Fullstack Developer",
+        description: [
+          "Modernized a client’s CodeIgniter 3 app by migrating to Laravel, improving functionality, design, and performance.",
+          "Developed full-stack, responsive, and efficient web applications for different clients of the consulting team.",
+        ],
+      },
+    ],
+    tech: ["Laravel", "PHP", "Bootstrap", "AJAX"],
+  },
   "2023-2024": {
     company: "The Guidon",
     link: "https://theguidon.com/",
@@ -11,45 +25,48 @@ export const Position = {
         ],
       },
     ],
+    tech: ["Tailwind", "React", "HTML", "CSS", "JavaScript"],
   },
   "Jun - Aug 2022\nJun - Aug 2023 ": {
-    company: "Web Head • Ateneo Orientation Seminar",
+    company: "Ateneo Orientation Seminar",
     link: "https://www.facebook.com/2022OrSem/",
     positions: [
       {
-        position: "Web Deputy",
+        position: "Web Head • Web Deputy",
         description: [
-          "Implemented the front-end design for the OrSem 2022: Tindig website and OrSem 2023: Muli websites using Figma and React",
+          "Leveraged Figma, Django REST, React, and custom scripts to optimize ADMU's freshman website, enhancing design, content management, and performance for 1,500+ users.",
         ],
       },
     ],
+    tech: ["Django REST", "React"],
   },
   "2022 - 2023": {
-    company:
-      "Vice President for Development and Training • Computer Society of the Ateneo",
+    company: "Computer Society of the Ateneo",
     link: "https://compsat.org/",
     positions: [
       {
-        position: "",
+        position: "Vice President for Development and Training",
         description: [
           "Project-managed and developed Celebrate Your Sparkle website and Fearless company website",
           "Successfully managed and organized training workshops for more than 100 Dev team members",
-          "Led the team for organizing Blue Hacks 2023, a hackathon attracting over 50 participants",
+          "Developed an enlistment website where 1,800+ seniors can sign up for their photoshoot schedules",
         ],
       },
     ],
+    tech: ["Django REST", "React", "NextJS"],
   },
   "2021 - 2023": {
-    company: "Engineering Lead • Google Developer Student Clubs - Loyola",
+    company: "Google Developer Student Clubs - Loyola",
     link: "https://www.facebook.com/gdscloyola/",
     positions: [
       {
-        position: "Senior Software Engineer",
+        position: "Engineering Lead • Senior Software Engineer",
         description: [
           "Conducted a workshop on Introduction to Python during Study Jams 2023",
           "Led the development team and developed the features for adding classes and tasks in the Beadle App, a mobile enlistment assistant application, using Flutter",
         ],
       },
     ],
+    tech: ["Flutter"],
   },
 };
