@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.351da915.css",
-    "main.js": "/personal-portfolio/static/js/main.21ad469a.js",
+    "main.css": "/personal-portfolio/static/css/main.b1ce4335.css",
+    "main.js": "/personal-portfolio/static/js/main.23aca3d6.js",
+    "static/media/6.png": "/personal-portfolio/static/media/6.52889a1a838bc1a49648.png",
     "static/media/4.png": "/personal-portfolio/static/media/4.bc05fdb1946678020003.png",
     "static/media/5.png": "/personal-portfolio/static/media/5.01c00bb5286d61ae8090.png",
     "static/media/1.png": "/personal-portfolio/static/media/1.4e37cdf0a273b9a7f79e.png",
-    "static/media/Panghulan-Resume.pdf": "/personal-portfolio/static/media/Panghulan-Resume.94dcbd531c1726412b76.pdf",
+    "static/media/Panghulan-Resume.pdf": "/personal-portfolio/static/media/Panghulan-Resume.1d242bb8240fd99226b8.pdf",
     "index.html": "/personal-portfolio/index.html",
-    "main.351da915.css.map": "/personal-portfolio/static/css/main.351da915.css.map",
-    "main.21ad469a.js.map": "/personal-portfolio/static/js/main.21ad469a.js.map"
+    "main.b1ce4335.css.map": "/personal-portfolio/static/css/main.b1ce4335.css.map",
+    "main.23aca3d6.js.map": "/personal-portfolio/static/js/main.23aca3d6.js.map"
   },
-  "entrypoints": ["static/css/main.351da915.css", "static/js/main.21ad469a.js"]
+  "entrypoints": ["static/css/main.b1ce4335.css", "static/js/main.23aca3d6.js"]
 }
