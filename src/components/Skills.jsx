@@ -24,12 +24,20 @@ const Skills = () => {
     <section id="skills">
       <div className="container skills__container">
         <div className="hero-container">
-          <p>
-            I possess a wide range of knowledge on various tech stacks and
-            programming languages, particularly in{" "}
-            <span>full-stack development</span> for both web and mobile
-            platforms.
-          </p>
+          <div className="section_header">
+            <div class="section_tag">
+              <span>Tools and Skills</span>
+            </div>
+            <div className="section_description">
+              <h2>Full Stack Development Expertise</h2>
+              <p>
+                I possess a wide range of knowledge on various tech stacks and
+                programming languages, particularly in{" "}
+                <span>full stack development</span> for both web and mobile
+                platforms.{" "}
+              </p>
+            </div>
+          </div>
         </div>
         <div className="skills-content">
           <h4>
@@ -83,11 +91,6 @@ const Skills = () => {
           <h4>
             <DiMongodb className="skills__details-icon" />
             <br></br> Mongo DB
-          </h4>
-
-          <h4>
-            <SiMysql className="skills__details-icon" />
-            <br></br> PostgreSQL
           </h4>
           <h4>
             <DiPython className="skills__details-icon" />

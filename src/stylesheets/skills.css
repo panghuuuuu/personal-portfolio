@@ -13,8 +13,8 @@
 
 .skills-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(0px, 150px));
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(0px, 10rem));
   align-items: center;
 }
 
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 850px) {
   .skills__container {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
   }
 }
 

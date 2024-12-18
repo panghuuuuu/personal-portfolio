@@ -11,9 +11,16 @@ export const Position = {
         ],
       },
     ],
-    tech: ["Laravel", "PHP", "Bootstrap", "AJAX"],
+    technologies: [
+      "Laravel",
+      "PHP",
+      "Bootstrap",
+      "AJAX",
+      "jQuery",
+      "SASS / SCSS",
+    ],
   },
-  "2023-2024": {
+  "June 2023 - May 2024": {
     company: "The Guidon",
     link: "https://theguidon.com/",
     positions: [
@@ -25,7 +32,7 @@ export const Position = {
         ],
       },
     ],
-    tech: ["Tailwind", "React", "HTML", "CSS", "JavaScript"],
+    technologies: ["Tailwind", "React", "HTML", "CSS", "JavaScript"],
   },
   "Jun - Aug 2022\nJun - Aug 2023 ": {
     company: "Ateneo Orientation Seminar",
@@ -38,9 +45,9 @@ export const Position = {
         ],
       },
     ],
-    tech: ["Django REST", "React"],
+    technologies: ["Django REST", "React", "TailwindCSS", "SCSS/SASS"],
   },
-  "2022 - 2023": {
+  "June 2022 - May 2023": {
     company: "Computer Society of the Ateneo",
     link: "https://compsat.org/",
     positions: [
@@ -53,9 +60,9 @@ export const Position = {
         ],
       },
     ],
-    tech: ["Django REST", "React", "NextJS"],
+    technologies: ["Django REST", "PostgreSQL", "React", "NextJS"],
   },
-  "2021 - 2023": {
+  "June 2021 - May 2023": {
     company: "Google Developer Student Clubs - Loyola",
     link: "https://www.facebook.com/gdscloyola/",
     positions: [
@@ -67,6 +74,6 @@ export const Position = {
         ],
       },
     ],
-    tech: ["Flutter"],
+    technologies: ["Flutter"],
   },
 };

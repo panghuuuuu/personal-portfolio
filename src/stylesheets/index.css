@@ -47,6 +47,10 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .intro,
 span {
   color: var(--color-primary);
@@ -102,6 +106,25 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+.section_tag {
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section_description {
+  text-align: center;
 }
 
 /* =============== MEDIA QUERIES ============== */

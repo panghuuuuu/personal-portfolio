@@ -7,15 +7,15 @@ export const Projects = {
   "ILAW Database": {
     image: Main,
     description:
-      "The Integrated Library Automated Website or ILAW research database helps St. Theresa's College Q.C. students and teachers organize and access Theresians' academic journals and research papers.",
+      "A research database for St. Theresa's College students and teachers to access academic journals and papers.",
     github_link: "",
     live_site: "https://ilawdatabase.com/",
-    technologies: ["PHP", "CSS", "MySQL"],
+    technologies: ["PHP", "JavaScript", "CSS", "MySQL"],
   },
   "AEGIS Photoshoot Enlistment Website": {
     image: Aegis,
     description:
-      "Built an automated signup system for Ateneo's senior photoshoot season, handling 2,500+ signups (individual & group) and improving the user experience for both students and administrators.",
+      "An automated signup system for Ateneo's senior photoshoot, managing 2,500+ signups and improving user experience.",
     github_link: "",
     live_site: "https://aegis.ateneo.edu/",
     technologies: ["Next.js", "ReactJS", "Django REST"],
@@ -23,7 +23,7 @@ export const Projects = {
   "UAAP Season 86 Primer - First Semester": {
     image: Guidon,
     description:
-      "The GUIDON Sports' First Semester Digital Primer that shows the lessons, narratives, and expectations that the Blue Eagles shared coming into UAAP Season 86",
+      "A digital primer showcasing Blue Eagles' insights and expectations for UAAP Season 86.",
     github_link: "",
     live_site: "https://theguidon.com/1112/main/uaap-86-primer-volume-1/",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -31,9 +31,9 @@ export const Projects = {
   "ADMU OrSem Website": {
     image: OrSem,
     description:
-      "The ADMU OrSem Website is a platform that provides essential information and updates about ADMU OrSem, catering to the approximately 2,500 freshmen entering the Ateneo each year.",
+      "A platform providing essential information for 2,500+ freshmen entering Ateneo each year.",
     github_link: "",
     live_site: "https://admuorsem.com/",
-    technologies: ["Django REST", "ReactJS"],
+    technologies: ["Django REST", "PostgreSQL", "ReactJS", "TailwindCSS"],
   },
 };

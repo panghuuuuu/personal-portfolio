@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import "../stylesheets/experience.css";
 import { Position } from "../constants/experience.js";
 import { MdArrowOutward } from "react-icons/md";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
 const Experience = () => {
-  const [showMore, setShowMore] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const maxCompaniesToShow = 3;
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,76 +25,67 @@ const Experience = () => {
     };
   }, []);
 
-  const handleShowMore = () => {
-    setShowMore(!showMore);
-  };
-
   let content = [];
   const companies = Object.keys(Position);
 
-  const slicedCompanies = companies.slice(
-    0,
-    showMore ? companies.length : maxCompaniesToShow
-  );
-
-  slicedCompanies.forEach((companyName, i) => {
+  companies.forEach((companyName) => {
     const companyData = Position[companyName];
     const company = companyData.company;
     const link = companyData.link;
     const positions = companyData.positions;
-
+    const techContent = companyData.technologies.map((item, index) => (
+      <span key={`${companyName}-${index}`} className="tech">
+        {item}
+      </span>
+    ));
     content.push(
-      <div key={companyName} className="experience">
-        <div className="left_container">
-          <p>
-            {companyName.split("\n").map((line, i) => (
-              <p key={i}>
-                {line}
-                {i !== companyName.split("\n").length - 1 && <br />}{" "}
-              </p>
-            ))}
-          </p>
+      <VerticalTimelineElement
+        key={companyName}
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: "transparent", color: "transparent" }}
+        contentArrowStyle={{ background: "transparent", color: "transparent" }}
+        date={companyName}
+        iconStyle={{
+          background: "var(--color-primary-variant)",
+          color: "#fff",
+        }}
+      >
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="vertical-timeline-element-title"
+        >
+          <h4 className="company_name">
+            {company} <MdArrowOutward />
+          </h4>
+        </a>
+        <div className="positions-list">
+          {positions.map((pos, j) => (
+            <div key={`${companyName}-${j}`} className="position">
+              <h4 className="position_title">{pos.position}</h4>
+              <ul>
+                {pos.description.map((desc, k) => (
+                  <li
+                    className="position_desc"
+                    key={`${companyName}-${j}-${k}`}
+                  >
+                    {desc}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-        <div className="right_container">
-          <a href={link} target="blank">
-            <h3 className="company_name">
-              {company} {""}
-              <MdArrowOutward />
-            </h3>
-          </a>
-          <div className="positions-list">
-            {positions.map((pos, j) => (
-              <div key={`${companyName}-${j}`} className="position">
-                <h3 className="position_title">{pos.position}</h3>
-                <ul>
-                  {pos.description.map((desc, k) => (
-                    <li
-                      className="position_desc"
-                      key={`${companyName}-${j}-${k}`}
-                    >
-                      {desc}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+        <div className="experience_tech">{techContent}</div>
+      </VerticalTimelineElement>
     );
   });
 
   return (
     <section id="experience">
       <div className="container experience__container">
-        {content}
-        {companies.length > maxCompaniesToShow && (
-          <div className="show-more-btn" onClick={handleShowMore}>
-            {showMore
-              ? "Show Less"
-              : `Show More (${companies.length - maxCompaniesToShow})`}
-          </div>
-        )}
+        <VerticalTimeline>{content}</VerticalTimeline>
       </div>
     </section>
   );

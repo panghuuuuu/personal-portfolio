@@ -2,15 +2,16 @@
   text-align: center;
 }
 
+.experience__container {
+  display: flex;
+}
+
 .experience {
   display: flex;
   margin-bottom: 20px;
 }
 
-.left_container {
-  flex: 1;
-}
-.right_container {
+.indiv_container {
   text-align: left;
   flex: 3;
 }
@@ -32,6 +33,19 @@
 .show-more-btn:hover {
   color: var(--color-primary);
   cursor: pointer;
+}
+
+.positions-list li {
+  font-size: small;
+  text-align: left;
+}
+
+.experience_tech {
+  display: flex;
+}
+
+.experience_tech {
+  font-size: small;
 }
 
 @keyframes scroll {
@@ -64,5 +78,22 @@
 
   .position_title {
     font-size: large;
+  }
+}
+
+.vertical-timeline-element-content {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-shadow: 3px 3px 3px #ddd !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: none !important;
+}
+@media screen and (min-width: 1080px) {
+  .vertical-timeline-element-icon {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: -10px !important;
   }
 }

@@ -3,33 +3,28 @@ import "../stylesheets/works.css";
 import { MdArrowOutward } from "react-icons/md";
 import { Projects } from "../constants/projects";
 import "react-horizontal-scrolling-menu/dist/styles.css";
-
 const Works = () => {
   const projects = Object.entries(Projects);
 
-  const [selected, setSelected] = React.useState([]);
-
-  const isItemSelected = (id) => !!selected.find((el) => el === id);
-
-  const handleClick =
-    (id) =>
-    ({ getItemById, scrollToItem }) => {
-      const itemSelected = isItemSelected(id);
-
-      setSelected((currentSelected) =>
-        itemSelected
-          ? currentSelected.filter((el) => el !== id)
-          : currentSelected.concat(id)
-      );
-    };
-
   return (
     <section id="works">
+      <div className="section_header">
+        <div class="section_tag">
+          <span>Web Development</span>
+        </div>
+        <div className="section_description">
+          <h2>Innovative Web App Solutions</h2>
+          <p>
+            I love creating innovative web applications that bring your ideas to
+            life with seamless, interactive experiences.
+          </p>
+        </div>
+      </div>
       <div className="projects">
         {projects.map(([key, value], index) => {
           const techContent = value.technologies.map((item, index) => (
             <span key={`${key}-${index}`} className="tech">
-              {item}{" "}
+              {item}
             </span>
           ));
 
@@ -53,8 +48,8 @@ const Works = () => {
                   </a>
                 )}
               </h3>
-              <div className="tech_items">{techContent}</div>
               <p className="project_desc">{value.description}</p>
+              <div className="tech_items">{techContent}</div>
             </div>
           );
         })}

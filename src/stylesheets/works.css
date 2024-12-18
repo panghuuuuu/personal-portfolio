@@ -6,6 +6,7 @@
   display: flex;
   overflow-x: scroll;
   width: 100%;
+  margin-top: 1em;
 }
 
 .project_details {
@@ -41,11 +42,18 @@
 }
 
 span.tech {
-  background-color: var(--color-bg-variant);
   color: var(--color-primary-variant);
-  padding: 0.3rem;
-  border-radius: 0.4rem;
-  margin: 0.2rem;
+}
+
+span.tech::after {
+  content: "•";
+  color: var(--color-primary-variant);
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+span.tech:last-child::after {
+  content: "";
 }
 
 .tech_items {
@@ -81,6 +89,6 @@ span.tech {
 
 @media screen and (min-width: 1280px) {
   .project_details {
-    min-width: 32vw;
+    min-width: 30vw;
   }
 }
