@@ -4,7 +4,7 @@ import "../stylesheets/footer.css";
 const Footer = () => {
   return (
     <section id="footer">
-      <h4>Design & Built by Ysabella Panghulan</h4>
+      <h4>Designed & Built by Ysabella Panghulan</h4>
     </section>
   );
 };
