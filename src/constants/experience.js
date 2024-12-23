@@ -4,7 +4,7 @@ export const Position = {
     link: "https://www.hackazouk.com/",
     positions: [
       {
-        position: "Fullstack Developer",
+        position: "Full Stack Developer",
         description: [
           "Modernized a client’s CodeIgniter 3 app by migrating to Laravel, improving functionality, design, and performance.",
           "Developed full-stack, responsive, and efficient web applications for different clients of the consulting team.",
